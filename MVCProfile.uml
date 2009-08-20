@@ -1,6 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_fcEmMAj6Ed6Up9Iq_uAkVA" name="MVC" metaclassReference="_qZ17UQj6Ed6Up9Iq_uAkVA _qZ2iYAj6Ed6Up9Iq_uAkVA _aIDSII1wEd6UntVN22ZQ4w _aID5MI1wEd6UntVN22ZQ4w">
   <eAnnotations xmi:id="_Rcs2YAj8Ed6Up9Iq_uAkVA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_iOKSEI16Ed6UntVN22ZQ4w" name="MVC" nsURI="http:///schemas/MVC/_iOH10I16Ed6UntVN22ZQ4w/6" nsPrefix="MVC">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSEY16Ed6UntVN22ZQ4w" name="ModelUpdatePort">
+        <eAnnotations xmi:id="_iOKSEo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LbEgkAj7Ed6Up9Iq_uAkVA"/>
+        <eAnnotations xmi:id="_iOKSE416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSFI16Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSFY16Ed6UntVN22ZQ4w" source="redefines" references="_iOKSF416Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSF416Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSGY16Ed6UntVN22ZQ4w" name="ModelDataPort">
+        <eAnnotations xmi:id="_iOKSGo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MGQyoAj7Ed6Up9Iq_uAkVA"/>
+        <eAnnotations xmi:id="_iOKSG416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSHI16Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSHY16Ed6UntVN22ZQ4w" source="redefines" references="_iOKSH416Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSH416Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSIY16Ed6UntVN22ZQ4w" name="ViewUpdatePort">
+        <eAnnotations xmi:id="_iOKSIo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MgDLoAj7Ed6Up9Iq_uAkVA"/>
+        <eAnnotations xmi:id="_iOKSI416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSJI16Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSJY16Ed6UntVN22ZQ4w" source="redefines" references="_iOKSJ416Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSJ416Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSKY16Ed6UntVN22ZQ4w" name="ControlDataPort">
+        <eAnnotations xmi:id="_iOKSKo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_M28BoAj7Ed6Up9Iq_uAkVA"/>
+        <eAnnotations xmi:id="_iOKSK416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSLI16Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSLY16Ed6UntVN22ZQ4w" source="redefines" references="_iOKSL416Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSL416Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSMY16Ed6UntVN22ZQ4w" name="ControlCommandPort">
+        <eAnnotations xmi:id="_iOKSMo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NKAuoAj7Ed6Up9Iq_uAkVA"/>
+        <eAnnotations xmi:id="_iOKSM416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSNI16Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSNY16Ed6UntVN22ZQ4w" source="redefines" references="_iOKSN416Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSN416Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSOY16Ed6UntVN22ZQ4w" name="ViewCommandPort">
+        <eAnnotations xmi:id="_iOKSOo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NdKUIAj7Ed6Up9Iq_uAkVA"/>
+        <eAnnotations xmi:id="_iOKSO416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSPI16Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSPY16Ed6UntVN22ZQ4w" source="redefines" references="_iOKSP416Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSP416Ed6UntVN22ZQ4w" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSQY16Ed6UntVN22ZQ4w" name="DataInterface">
+        <eAnnotations xmi:id="_iOKSQo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wM_wQAj7Ed6Up9Iq_uAkVA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSQ416Ed6UntVN22ZQ4w" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSRY16Ed6UntVN22ZQ4w" name="UpdateInterface">
+        <eAnnotations xmi:id="_iOKSRo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wsSUUAj7Ed6Up9Iq_uAkVA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSR416Ed6UntVN22ZQ4w" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSSY16Ed6UntVN22ZQ4w" name="CommandInterface">
+        <eAnnotations xmi:id="_iOKSSo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_xB9CUAj7Ed6Up9Iq_uAkVA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSS416Ed6UntVN22ZQ4w" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSTY16Ed6UntVN22ZQ4w" name="ModelUpdateInstance">
+        <eAnnotations xmi:id="_iOKSTo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_eQREsI1wEd6UntVN22ZQ4w"/>
+        <eAnnotations xmi:id="_iOKST416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSUI16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSUY16Ed6UntVN22ZQ4w" source="redefines" references="_iOKSU416Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSU416Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSVY16Ed6UntVN22ZQ4w" name="ModelDataInstance">
+        <eAnnotations xmi:id="_iOKSVo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_em-UgI1wEd6UntVN22ZQ4w"/>
+        <eAnnotations xmi:id="_iOKSV416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSWI16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSWY16Ed6UntVN22ZQ4w" source="redefines" references="_iOKSW416Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOKSW416Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOKSXY16Ed6UntVN22ZQ4w" name="ViewUpdateInstance">
+        <eAnnotations xmi:id="_iOKSXo16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_frvkMI1wEd6UntVN22ZQ4w"/>
+        <eAnnotations xmi:id="_iOKSX416Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOKSYI16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOKSYY16Ed6UntVN22ZQ4w" source="redefines" references="_iOK5IY16Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOK5IY16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOK5I416Ed6UntVN22ZQ4w" name="ControlDataInstance">
+        <eAnnotations xmi:id="_iOK5JI16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gpdwsI1wEd6UntVN22ZQ4w"/>
+        <eAnnotations xmi:id="_iOK5JY16Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOK5Jo16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOK5J416Ed6UntVN22ZQ4w" source="redefines" references="_iOK5KY16Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOK5KY16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOK5K416Ed6UntVN22ZQ4w" name="ControlCommandInstance">
+        <eAnnotations xmi:id="_iOK5LI16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gpdwsY1wEd6UntVN22ZQ4w"/>
+        <eAnnotations xmi:id="_iOK5LY16Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOK5Lo16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOK5L416Ed6UntVN22ZQ4w" source="redefines" references="_iOK5MY16Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOK5MY16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOK5M416Ed6UntVN22ZQ4w" name="ViewCommandInstance">
+        <eAnnotations xmi:id="_iOK5NI16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gpdwso1wEd6UntVN22ZQ4w"/>
+        <eAnnotations xmi:id="_iOK5NY16Ed6UntVN22ZQ4w" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_iOK5No16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+            <eAnnotations xmi:id="_iOK5N416Ed6UntVN22ZQ4w" source="redefines" references="_iOK5OY16Ed6UntVN22ZQ4w"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOK5OY16Ed6UntVN22ZQ4w" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOK5O416Ed6UntVN22ZQ4w" name="DataMessage">
+        <eAnnotations xmi:id="_iOK5PI16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2RyxwI11Ed6UntVN22ZQ4w"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOK5PY16Ed6UntVN22ZQ4w" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOK5P416Ed6UntVN22ZQ4w" name="UpdateMessage">
+        <eAnnotations xmi:id="_iOK5QI16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_26sk0I11Ed6UntVN22ZQ4w"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOK5QY16Ed6UntVN22ZQ4w" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_iOK5Q416Ed6UntVN22ZQ4w" name="CommandMessage">
+        <eAnnotations xmi:id="_iOK5RI16Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_3kzRwI11Ed6UntVN22ZQ4w"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_iOK5RY16Ed6UntVN22ZQ4w" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_ERE6oI13Ed6UntVN22ZQ4w" name="MVC" nsURI="http:///schemas/MVC/_ERETkI13Ed6UntVN22ZQ4w/5" nsPrefix="MVC">
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_ERE6oY13Ed6UntVN22ZQ4w" name="ModelUpdatePort">
         <eAnnotations xmi:id="_ERE6oo13Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LbEgkAj7Ed6Up9Iq_uAkVA"/>
@@ -579,52 +761,70 @@
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
   </elementImport>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_LbEgkAj7Ed6Up9Iq_uAkVA" name="ModelUpdatePort">
-    <ownedAttribute xmi:id="_fZSigQj7Ed6Up9Iq_uAkVA" name="base_Port" association="_fZR7cAj7Ed6Up9Iq_uAkVA">
+    <ownedAttribute xmi:id="_fZSigQj7Ed6Up9Iq_uAkVA" name="base_Port">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_L5-eUo16Ed6UntVN22ZQ4w" name="base_Port" association="_L5-eUI16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_MGQyoAj7Ed6Up9Iq_uAkVA" name="ModelDataPort">
-    <ownedAttribute xmi:id="_i0xx8Aj7Ed6Up9Iq_uAkVA" name="base_Port" association="_i0xK4Aj7Ed6Up9Iq_uAkVA">
+    <ownedAttribute xmi:id="_i0xx8Aj7Ed6Up9Iq_uAkVA" name="base_Port">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_QmG2QY16Ed6UntVN22ZQ4w" name="base_Port" association="_QmGPMI16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_MgDLoAj7Ed6Up9Iq_uAkVA" name="ViewUpdatePort">
-    <ownedAttribute xmi:id="_o1YCcAj7Ed6Up9Iq_uAkVA" name="base_Port" association="_o1XbYAj7Ed6Up9Iq_uAkVA">
+    <ownedAttribute xmi:id="_o1YCcAj7Ed6Up9Iq_uAkVA" name="base_Port">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RWkC0o16Ed6UntVN22ZQ4w" name="base_Port" association="_RWkC0I16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_M28BoAj7Ed6Up9Iq_uAkVA" name="ControlDataPort">
-    <ownedAttribute xmi:id="_pyB38gj7Ed6Up9Iq_uAkVA" name="base_Port" association="_pyB38Aj7Ed6Up9Iq_uAkVA">
+    <ownedAttribute xmi:id="_pyB38gj7Ed6Up9Iq_uAkVA" name="base_Port">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SJ_q4Y16Ed6UntVN22ZQ4w" name="base_Port" association="_SJ_D0I16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_NKAuoAj7Ed6Up9Iq_uAkVA" name="ControlCommandPort">
-    <ownedAttribute xmi:id="_qq-SIgj7Ed6Up9Iq_uAkVA" name="base_Port" association="_qq-SIAj7Ed6Up9Iq_uAkVA">
+    <ownedAttribute xmi:id="_qq-SIgj7Ed6Up9Iq_uAkVA" name="base_Port">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_TCYrco16Ed6UntVN22ZQ4w" name="base_Port" association="_TCYrcI16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_NdKUIAj7Ed6Up9Iq_uAkVA" name="ViewCommandPort">
-    <ownedAttribute xmi:id="_r8SwEgj7Ed6Up9Iq_uAkVA" name="base_Port" association="_r8SwEAj7Ed6Up9Iq_uAkVA">
+    <ownedAttribute xmi:id="_r8SwEgj7Ed6Up9Iq_uAkVA" name="base_Port">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UFwM8Y16Ed6UntVN22ZQ4w" name="base_Port" association="_UFvl4I16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_fZR7cAj7Ed6Up9Iq_uAkVA" name="Port_ViewDataPort" memberEnd="_fZSigAj7Ed6Up9Iq_uAkVA _fZSigQj7Ed6Up9Iq_uAkVA">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fZSigAj7Ed6Up9Iq_uAkVA" name="extension_ViewDataPort" type="_LbEgkAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_fZR7cAj7Ed6Up9Iq_uAkVA"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_L5-eUI16Ed6UntVN22ZQ4w" name="Port_ModelUpdatePort" memberEnd="_L5-eUY16Ed6UntVN22ZQ4w _L5-eUo16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_L5-eUY16Ed6UntVN22ZQ4w" name="extension_ModelUpdatePort" type="_LbEgkAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_L5-eUI16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_i0xK4Aj7Ed6Up9Iq_uAkVA" name="Port_ModelDataPort" memberEnd="_i0xK4Qj7Ed6Up9Iq_uAkVA _i0xx8Aj7Ed6Up9Iq_uAkVA">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_i0xK4Qj7Ed6Up9Iq_uAkVA" name="extension_ModelDataPort" type="_MGQyoAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_i0xK4Aj7Ed6Up9Iq_uAkVA"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_QmGPMI16Ed6UntVN22ZQ4w" name="Port_ModelDataPort" memberEnd="_QmG2QI16Ed6UntVN22ZQ4w _QmG2QY16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_QmG2QI16Ed6UntVN22ZQ4w" name="extension_ModelDataPort" type="_MGQyoAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_QmGPMI16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_o1XbYAj7Ed6Up9Iq_uAkVA" name="Port_ViewUpdatePort" memberEnd="_o1XbYQj7Ed6Up9Iq_uAkVA _o1YCcAj7Ed6Up9Iq_uAkVA">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_o1XbYQj7Ed6Up9Iq_uAkVA" name="extension_ViewUpdatePort" type="_MgDLoAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_o1XbYAj7Ed6Up9Iq_uAkVA"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_RWkC0I16Ed6UntVN22ZQ4w" name="Port_ViewUpdatePort" memberEnd="_RWkC0Y16Ed6UntVN22ZQ4w _RWkC0o16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_RWkC0Y16Ed6UntVN22ZQ4w" name="extension_ViewUpdatePort" type="_MgDLoAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_RWkC0I16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_pyB38Aj7Ed6Up9Iq_uAkVA" name="Port_ControlUpdatePort" memberEnd="_pyB38Qj7Ed6Up9Iq_uAkVA _pyB38gj7Ed6Up9Iq_uAkVA">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pyB38Qj7Ed6Up9Iq_uAkVA" name="extension_ControlUpdatePort" type="_M28BoAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_pyB38Aj7Ed6Up9Iq_uAkVA"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_SJ_D0I16Ed6UntVN22ZQ4w" name="Port_ControlDataPort" memberEnd="_SJ_q4I16Ed6UntVN22ZQ4w _SJ_q4Y16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_SJ_q4I16Ed6UntVN22ZQ4w" name="extension_ControlDataPort" type="_M28BoAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_SJ_D0I16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_qq-SIAj7Ed6Up9Iq_uAkVA" name="Port_ControlCommandPort" memberEnd="_qq-SIQj7Ed6Up9Iq_uAkVA _qq-SIgj7Ed6Up9Iq_uAkVA">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_qq-SIQj7Ed6Up9Iq_uAkVA" name="extension_ControlCommandPort" type="_NKAuoAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_qq-SIAj7Ed6Up9Iq_uAkVA"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_TCYrcI16Ed6UntVN22ZQ4w" name="Port_ControlCommandPort" memberEnd="_TCYrcY16Ed6UntVN22ZQ4w _TCYrco16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_TCYrcY16Ed6UntVN22ZQ4w" name="extension_ControlCommandPort" type="_NKAuoAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_TCYrcI16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_r8SwEAj7Ed6Up9Iq_uAkVA" name="Port_ModelCommandPort" memberEnd="_r8SwEQj7Ed6Up9Iq_uAkVA _r8SwEgj7Ed6Up9Iq_uAkVA">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_r8SwEQj7Ed6Up9Iq_uAkVA" name="extension_ModelCommandPort" type="_NdKUIAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_r8SwEAj7Ed6Up9Iq_uAkVA"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_UFvl4I16Ed6UntVN22ZQ4w" name="Port_ViewCommandPort" memberEnd="_UFwM8I16Ed6UntVN22ZQ4w _UFwM8Y16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_UFwM8I16Ed6UntVN22ZQ4w" name="extension_ViewCommandPort" type="_NdKUIAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_UFvl4I16Ed6UntVN22ZQ4w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_wM_wQAj7Ed6Up9Iq_uAkVA" name="DataInterface">
     <ownedAttribute xmi:id="_2wItIgj7Ed6Up9Iq_uAkVA" name="base_Interface" association="_2wItIAj7Ed6Up9Iq_uAkVA">
@@ -651,52 +851,70 @@
     <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_5T2nEQj7Ed6Up9Iq_uAkVA" name="extension_CommandInterface" type="_xB9CUAj7Ed6Up9Iq_uAkVA" aggregation="composite" association="_5T2nEAj7Ed6Up9Iq_uAkVA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_eQREsI1wEd6UntVN22ZQ4w" name="ModelUpdateInstance">
-    <ownedAttribute xmi:id="_tL1sIY1wEd6UntVN22ZQ4w" name="base_Lifeline" association="_tL1FEI1wEd6UntVN22ZQ4w">
+    <ownedAttribute xmi:id="_tL1sIY1wEd6UntVN22ZQ4w" name="base_Lifeline">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bXFFgo16Ed6UntVN22ZQ4w" name="base_Lifeline" association="_bXFFgI16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_em-UgI1wEd6UntVN22ZQ4w" name="ModelDataInstance">
-    <ownedAttribute xmi:id="_uck7Qo1wEd6UntVN22ZQ4w" name="base_Lifeline" association="_uck7QI1wEd6UntVN22ZQ4w">
+    <ownedAttribute xmi:id="_uck7Qo1wEd6UntVN22ZQ4w" name="base_Lifeline">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_cKvXEo16Ed6UntVN22ZQ4w" name="base_Lifeline" association="_cKvXEI16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_frvkMI1wEd6UntVN22ZQ4w" name="ViewUpdateInstance">
-    <ownedAttribute xmi:id="_v1-XIo1wEd6UntVN22ZQ4w" name="base_Lifeline" association="_v1-XII1wEd6UntVN22ZQ4w">
+    <ownedAttribute xmi:id="_v1-XIo1wEd6UntVN22ZQ4w" name="base_Lifeline">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_c7yZgo16Ed6UntVN22ZQ4w" name="base_Lifeline" association="_c7yZgI16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_gpdwsI1wEd6UntVN22ZQ4w" name="ControlDataInstance">
-    <ownedAttribute xmi:id="_xBBN8o1wEd6UntVN22ZQ4w" name="base_Lifeline" association="_xBBN8I1wEd6UntVN22ZQ4w">
+    <ownedAttribute xmi:id="_xBBN8o1wEd6UntVN22ZQ4w" name="base_Lifeline">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dteVIo16Ed6UntVN22ZQ4w" name="base_Lifeline" association="_dteVII16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_gpdwsY1wEd6UntVN22ZQ4w" name="ControlCommandInstance">
-    <ownedAttribute xmi:id="_yFIWUo1wEd6UntVN22ZQ4w" name="base_Lifeline" association="_yFIWUI1wEd6UntVN22ZQ4w">
+    <ownedAttribute xmi:id="_yFIWUo1wEd6UntVN22ZQ4w" name="base_Lifeline">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_eiX80o16Ed6UntVN22ZQ4w" name="base_Lifeline" association="_eiX80I16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_gpdwso1wEd6UntVN22ZQ4w" name="ViewCommandInstance">
-    <ownedAttribute xmi:id="_zHLCII1wEd6UntVN22ZQ4w" name="base_Lifeline" association="_zHKbEI1wEd6UntVN22ZQ4w">
+    <ownedAttribute xmi:id="_zHLCII1wEd6UntVN22ZQ4w" name="base_Lifeline">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fY9mko16Ed6UntVN22ZQ4w" name="base_Lifeline" association="_fY9mkI16Ed6UntVN22ZQ4w">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_tL1FEI1wEd6UntVN22ZQ4w" name="Lifeline_ViewDataInstance" memberEnd="_tL1sII1wEd6UntVN22ZQ4w _tL1sIY1wEd6UntVN22ZQ4w">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_tL1sII1wEd6UntVN22ZQ4w" name="extension_ViewDataInstance" type="_eQREsI1wEd6UntVN22ZQ4w" aggregation="composite" association="_tL1FEI1wEd6UntVN22ZQ4w"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_bXFFgI16Ed6UntVN22ZQ4w" name="Lifeline_ModelUpdateInstance" memberEnd="_bXFFgY16Ed6UntVN22ZQ4w _bXFFgo16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_bXFFgY16Ed6UntVN22ZQ4w" name="extension_ModelUpdateInstance" type="_eQREsI1wEd6UntVN22ZQ4w" aggregation="composite" association="_bXFFgI16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_uck7QI1wEd6UntVN22ZQ4w" name="Lifeline_ModelDataInstance" memberEnd="_uck7QY1wEd6UntVN22ZQ4w _uck7Qo1wEd6UntVN22ZQ4w">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_uck7QY1wEd6UntVN22ZQ4w" name="extension_ModelDataInstance" type="_em-UgI1wEd6UntVN22ZQ4w" aggregation="composite" association="_uck7QI1wEd6UntVN22ZQ4w"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_cKvXEI16Ed6UntVN22ZQ4w" name="Lifeline_ModelDataInstance" memberEnd="_cKvXEY16Ed6UntVN22ZQ4w _cKvXEo16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_cKvXEY16Ed6UntVN22ZQ4w" name="extension_ModelDataInstance" type="_em-UgI1wEd6UntVN22ZQ4w" aggregation="composite" association="_cKvXEI16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_v1-XII1wEd6UntVN22ZQ4w" name="Lifeline_ViewUpdateInstance" memberEnd="_v1-XIY1wEd6UntVN22ZQ4w _v1-XIo1wEd6UntVN22ZQ4w">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_v1-XIY1wEd6UntVN22ZQ4w" name="extension_ViewUpdateInstance" type="_frvkMI1wEd6UntVN22ZQ4w" aggregation="composite" association="_v1-XII1wEd6UntVN22ZQ4w"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_c7yZgI16Ed6UntVN22ZQ4w" name="Lifeline_ViewUpdateInstance" memberEnd="_c7yZgY16Ed6UntVN22ZQ4w _c7yZgo16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_c7yZgY16Ed6UntVN22ZQ4w" name="extension_ViewUpdateInstance" type="_frvkMI1wEd6UntVN22ZQ4w" aggregation="composite" association="_c7yZgI16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_xBBN8I1wEd6UntVN22ZQ4w" name="Lifeline_ControlUpdateInstance" memberEnd="_xBBN8Y1wEd6UntVN22ZQ4w _xBBN8o1wEd6UntVN22ZQ4w">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_xBBN8Y1wEd6UntVN22ZQ4w" name="extension_ControlUpdateInstance" type="_gpdwsI1wEd6UntVN22ZQ4w" aggregation="composite" association="_xBBN8I1wEd6UntVN22ZQ4w"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_dteVII16Ed6UntVN22ZQ4w" name="Lifeline_ControlDataInstance" memberEnd="_dteVIY16Ed6UntVN22ZQ4w _dteVIo16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_dteVIY16Ed6UntVN22ZQ4w" name="extension_ControlDataInstance" type="_gpdwsI1wEd6UntVN22ZQ4w" aggregation="composite" association="_dteVII16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_yFIWUI1wEd6UntVN22ZQ4w" name="Lifeline_ControlCommandInstance" memberEnd="_yFIWUY1wEd6UntVN22ZQ4w _yFIWUo1wEd6UntVN22ZQ4w">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_yFIWUY1wEd6UntVN22ZQ4w" name="extension_ControlCommandInstance" type="_gpdwsY1wEd6UntVN22ZQ4w" aggregation="composite" association="_yFIWUI1wEd6UntVN22ZQ4w"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_eiX80I16Ed6UntVN22ZQ4w" name="Lifeline_ControlCommandInstance" memberEnd="_eiX80Y16Ed6UntVN22ZQ4w _eiX80o16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_eiX80Y16Ed6UntVN22ZQ4w" name="extension_ControlCommandInstance" type="_gpdwsY1wEd6UntVN22ZQ4w" aggregation="composite" association="_eiX80I16Ed6UntVN22ZQ4w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_zHKbEI1wEd6UntVN22ZQ4w" name="Lifeline_ModelCommandInstance" memberEnd="_zHKbEY1wEd6UntVN22ZQ4w _zHLCII1wEd6UntVN22ZQ4w">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_zHKbEY1wEd6UntVN22ZQ4w" name="extension_ModelCommandInstance" type="_gpdwso1wEd6UntVN22ZQ4w" aggregation="composite" association="_zHKbEI1wEd6UntVN22ZQ4w"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_fY9mkI16Ed6UntVN22ZQ4w" name="Lifeline_ViewCommandInstance" memberEnd="_fY9mkY16Ed6UntVN22ZQ4w _fY9mko16Ed6UntVN22ZQ4w">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fY9mkY16Ed6UntVN22ZQ4w" name="extension_ViewCommandInstance" type="_gpdwso1wEd6UntVN22ZQ4w" aggregation="composite" association="_fY9mkI16Ed6UntVN22ZQ4w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_2RyxwI11Ed6UntVN22ZQ4w" name="DataMessage">
     <ownedAttribute xmi:id="_8h-9co11Ed6UntVN22ZQ4w" name="base_Message" association="_8h-9cI11Ed6UntVN22ZQ4w">
