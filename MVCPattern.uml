@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_xbO-4IwqEd6vdKRnqZE9WA" name="">
+  <elementImport xmi:id="_xb67YIwqEd6vdKRnqZE9WA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_xb9XoIwqEd6vdKRnqZE9WA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_xb9-sIwqEd6vdKRnqZE9WA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_xb9-sYwqEd6vdKRnqZE9WA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_1R8KsIwqEd6vdKRnqZE9WA" name="Model">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_kS5aMIwrEd6vdKRnqZE9WA" name="" type="_7YI3cIwrEd6vdKRnqZE9WA"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_NyNwoIwtEd6vdKRnqZE9WA" type="__9XgsIwsEd6vdKRnqZE9WA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_1f5HIIwqEd6vdKRnqZE9WA" name="View">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_lkJmsIwrEd6vdKRnqZE9WA" type="__kMywIwsEd6vdKRnqZE9WA"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_N_4ZMIwtEd6vdKRnqZE9WA" type="_CYA-MYwtEd6vdKRnqZE9WA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_1u4lYIwqEd6vdKRnqZE9WA" name="Controller">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_txNuwIwrEd6vdKRnqZE9WA" name="" type="_UmA1IIwsEd6vdKRnqZE9WA"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_OkuLoIwtEd6vdKRnqZE9WA" type="_CYA-MIwtEd6vdKRnqZE9WA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_DM_JQIwrEd6vdKRnqZE9WA" name="Data"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_DupE0IwrEd6vdKRnqZE9WA" name="Update"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_D9cV0IwrEd6vdKRnqZE9WA" name="Command"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7YI3cIwrEd6vdKRnqZE9WA" name="ModelData" clientDependency="_A21UwIwsEd6vdKRnqZE9WA">
+    <interfaceRealization xmi:id="_A21UwIwsEd6vdKRnqZE9WA" supplier="_DM_JQIwrEd6vdKRnqZE9WA" client="_7YI3cIwrEd6vdKRnqZE9WA" contract="_DM_JQIwrEd6vdKRnqZE9WA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UmA1IIwsEd6vdKRnqZE9WA" name="ControlData" clientDependency="_YNmm4IwsEd6vdKRnqZE9WA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_YNmm4IwsEd6vdKRnqZE9WA" name="" supplier="_DM_JQIwrEd6vdKRnqZE9WA" client="_UmA1IIwsEd6vdKRnqZE9WA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__kMywIwsEd6vdKRnqZE9WA" name="ViewUpdate" clientDependency="_DG2aIIwtEd6vdKRnqZE9WA">
+    <interfaceRealization xmi:id="_DG2aIIwtEd6vdKRnqZE9WA" supplier="_DupE0IwrEd6vdKRnqZE9WA" client="__kMywIwsEd6vdKRnqZE9WA" contract="_DupE0IwrEd6vdKRnqZE9WA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__9XgsIwsEd6vdKRnqZE9WA" name="ModelUpdate" clientDependency="_BguJ0IwtEd6vdKRnqZE9WA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_BguJ0IwtEd6vdKRnqZE9WA" supplier="_DupE0IwrEd6vdKRnqZE9WA" client="__9XgsIwsEd6vdKRnqZE9WA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CYA-MIwtEd6vdKRnqZE9WA" name="ControlCommand" clientDependency="_D_iVoIwtEd6vdKRnqZE9WA">
+    <interfaceRealization xmi:id="_D_iVoIwtEd6vdKRnqZE9WA" supplier="_D9cV0IwrEd6vdKRnqZE9WA" client="_CYA-MIwtEd6vdKRnqZE9WA" contract="_D9cV0IwrEd6vdKRnqZE9WA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CYA-MYwtEd6vdKRnqZE9WA" name="ViewCommand" clientDependency="_CYA-MowtEd6vdKRnqZE9WA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_CYA-MowtEd6vdKRnqZE9WA" supplier="_D9cV0IwrEd6vdKRnqZE9WA" client="_CYA-MYwtEd6vdKRnqZE9WA"/>
+</uml:Package>

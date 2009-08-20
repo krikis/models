@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_0fKqwC80Ed6Mz5zecd_Slw" name="CallbackSeq" metaclassReference="_i7RqUS9BEd6Mz5zecd_Slw _CSfusFAZEd6ADvFaAvZ5pg">
+  <eAnnotations xmi:id="_t03rQS9bEd6Mz5zecd_Slw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_eS2MkFbTEd62nu7Yx4gMbw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_eS1lgFbTEd62nu7Yx4gMbw/13" nsPrefix="CallbackSeq">
+      <eAnnotations xmi:id="_eS2MkVbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_eS2MklbTEd62nu7Yx4gMbw" key="documentation" value="Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallBackP')) and not (lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;let m1 : Message = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')) in m1.sendEvent.oclAsType(OccurrenceSpecification).toAfter->notEmpty() and m1.sendEvent.oclAsType(OccurrenceSpecification).toAfter = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore&#xA;let m2 : Message = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) in m2.receiveEvent.oclAsType(OccurrenceSpecification).toBefore->notEmpty() and m2.receiveEvent.oclAsType(OccurrenceSpecification).toBefore = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eS2Mk1bTEd62nu7Yx4gMbw" name="CallerP">
+        <eAnnotations xmi:id="_eS2MlFbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eS2MlVbTEd62nu7Yx4gMbw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eS2Ml1bTEd62nu7Yx4gMbw" name="CallBackP">
+        <eAnnotations xmi:id="_eS2MmFbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eS2MmVbTEd62nu7Yx4gMbw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eS2Mm1bTEd62nu7Yx4gMbw" name="Update">
+        <eAnnotations xmi:id="_eS2MnFbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eS2MnVbTEd62nu7Yx4gMbw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eS2Mn1bTEd62nu7Yx4gMbw" name="ObserveEvent">
+        <eAnnotations xmi:id="_eS2MoFbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eS2MoVbTEd62nu7Yx4gMbw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_A1xDgFbTEd62nu7Yx4gMbw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_A1wccFbTEd62nu7Yx4gMbw/12" nsPrefix="CallbackSeq">
+      <eAnnotations xmi:id="_A1xDgVbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_A1xDglbTEd62nu7Yx4gMbw" key="documentation" value="Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallBackP')) and not (lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;let m : Message = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')) in m.sendEvent.oclAsType(OccurrenceSpecification).toAfter->notEmpty() and m.sendEvent.oclAsType(OccurrenceSpecification).toAfter = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore&#xA;let m : Message = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) in m.receiveEvent.oclAsType(OccurrenceSpecification).toBefore->notEmpty() and m.receiveEvent.oclAsType(OccurrenceSpecification).toBefore = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A1xDg1bTEd62nu7Yx4gMbw" name="CallerP">
+        <eAnnotations xmi:id="_A1xDhFbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_A1xDhVbTEd62nu7Yx4gMbw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A1xDh1bTEd62nu7Yx4gMbw" name="CallBackP">
+        <eAnnotations xmi:id="_A1xDiFbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_A1xDiVbTEd62nu7Yx4gMbw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A1xDi1bTEd62nu7Yx4gMbw" name="Update">
+        <eAnnotations xmi:id="_A1xDjFbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_A1xDjVbTEd62nu7Yx4gMbw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_A1xDj1bTEd62nu7Yx4gMbw" name="ObserveEvent">
+        <eAnnotations xmi:id="_A1xDkFbTEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_A1xDkVbTEd62nu7Yx4gMbw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_pBj5YFbQEd62nu7Yx4gMbw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_pBjSUFbQEd62nu7Yx4gMbw/11" nsPrefix="CallbackSeq">
+      <eAnnotations xmi:id="_pBj5YVbQEd62nu7Yx4gMbw" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_pBj5YlbQEd62nu7Yx4gMbw" key="documentation" value="Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallBackP')) and not (lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pBj5Y1bQEd62nu7Yx4gMbw" name="CallerP">
+        <eAnnotations xmi:id="_pBj5ZFbQEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_pBj5ZVbQEd62nu7Yx4gMbw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pBj5Z1bQEd62nu7Yx4gMbw" name="CallBackP">
+        <eAnnotations xmi:id="_pBj5aFbQEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_pBj5aVbQEd62nu7Yx4gMbw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pBj5a1bQEd62nu7Yx4gMbw" name="Update">
+        <eAnnotations xmi:id="_pBj5bFbQEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_pBj5bVbQEd62nu7Yx4gMbw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pBj5b1bQEd62nu7Yx4gMbw" name="ObserveEvent">
+        <eAnnotations xmi:id="_pBj5cFbQEd62nu7Yx4gMbw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_pBj5cVbQEd62nu7Yx4gMbw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_7-4ZcVaYEd67T6XSEZbabw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_7-4ZcFaYEd67T6XSEZbabw/10" nsPrefix="CallbackSeq">
+      <eAnnotations xmi:id="_7-4ZclaYEd67T6XSEZbabw" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_7-4Zc1aYEd67T6XSEZbabw" key="documentation" value="Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallBackP')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_7-4ZdFaYEd67T6XSEZbabw" name="CallerP">
+        <eAnnotations xmi:id="_7-4ZdVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7-4ZdlaYEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_7-4ZeFaYEd67T6XSEZbabw" name="CallBackP">
+        <eAnnotations xmi:id="_7-4ZeVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7-4ZelaYEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_7-4ZfFaYEd67T6XSEZbabw" name="Update">
+        <eAnnotations xmi:id="_7-4ZfVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7-4ZflaYEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_7-4ZgFaYEd67T6XSEZbabw" name="ObserveEvent">
+        <eAnnotations xmi:id="_7-4ZgVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_7-4ZglaYEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_u7dmcVaYEd67T6XSEZbabw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_u7dmcFaYEd67T6XSEZbabw/9" nsPrefix="CallbackSeq">
+      <eAnnotations xmi:id="_u7dmclaYEd67T6XSEZbabw" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_u7dmc1aYEd67T6XSEZbabw" key="documentation" value="Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Lifeline.allInstances() ->exists(lifeline|(lifeline.getAppliedStereotypes() ->collect(name)->includes('CallBackP')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_u7dmdFaYEd67T6XSEZbabw" name="CallerP">
+        <eAnnotations xmi:id="_u7dmdVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_u7dmdlaYEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_u7dmeFaYEd67T6XSEZbabw" name="CallBackP">
+        <eAnnotations xmi:id="_u7dmeVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_u7dmelaYEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_u7dmfFaYEd67T6XSEZbabw" name="Update">
+        <eAnnotations xmi:id="_u7dmfVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_u7dmflaYEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_u7dmgFaYEd67T6XSEZbabw" name="ObserveEvent">
+        <eAnnotations xmi:id="_u7dmgVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_u7dmglaYEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_l1XkoVaYEd67T6XSEZbabw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_l1XkoFaYEd67T6XSEZbabw/8" nsPrefix="CallbackSeq">
+      <eAnnotations xmi:id="_l1XkolaYEd67T6XSEZbabw" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_l1Xko1aYEd67T6XSEZbabw" key="documentation" value="Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))&#xA;Lifeline.allInstances() ->exists(lifeline|(lifeline.getAppliedStereotypes() ->collect(name)->includes('CallBackP')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances()->exists(message|(message .getAppliedStereotypes()->collect(name)->includes('ObserveEvent')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_l1XkpFaYEd67T6XSEZbabw" name="CallerP">
+        <eAnnotations xmi:id="_l1XkpVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_l1XkplaYEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_l1XkqFaYEd67T6XSEZbabw" name="CallBackP">
+        <eAnnotations xmi:id="_l1XkqVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_l1XkqlaYEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_l1XkrFaYEd67T6XSEZbabw" name="Update">
+        <eAnnotations xmi:id="_l1XkrVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_l1XkrlaYEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_l1XksFaYEd67T6XSEZbabw" name="ObserveEvent">
+        <eAnnotations xmi:id="_l1XksVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_l1XkslaYEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_RtNjkVaYEd67T6XSEZbabw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_RtNjkFaYEd67T6XSEZbabw/7" nsPrefix="CallbackSeq">
+      <eAnnotations xmi:id="_RtNjklaYEd67T6XSEZbabw" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_RtNjk1aYEd67T6XSEZbabw" key="documentation" value="Lifeline.allInstances()->exists(lifeline|(lifeline .getAppliedStereotypes()->collect(name) ->includes('CallerP')))&#xA;Lifeline.allInstances() ->exists(lifeline|(lifeline.getAppliedStereotypes() ->collect(name)->includes('CallBackP')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances()->exists(message|(message .getAppliedStereotypes()->collect(name)->includes('ObserveEvent')))&#xA;Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)&#xA;Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())&#xA;Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll))&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore&#xA;Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RtNjlFaYEd67T6XSEZbabw" name="CallerP">
+        <eAnnotations xmi:id="_RtNjlVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RtNjllaYEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RtOKoFaYEd67T6XSEZbabw" name="CallBackP">
+        <eAnnotations xmi:id="_RtOKoVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RtOKolaYEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RtOKpFaYEd67T6XSEZbabw" name="Update">
+        <eAnnotations xmi:id="_RtOKpVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RtOKplaYEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RtOKqFaYEd67T6XSEZbabw" name="ObserveEvent">
+        <eAnnotations xmi:id="_RtOKqVaYEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RtOKqlaYEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_vvY7kVaJEd67T6XSEZbabw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_vvY7kFaJEd67T6XSEZbabw/6" nsPrefix="CallbackSeq">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vvY7klaJEd67T6XSEZbabw" name="CallerP">
+        <eAnnotations xmi:id="_vvY7k1aJEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vvY7lFaJEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vvY7llaJEd67T6XSEZbabw" name="CallBackP">
+        <eAnnotations xmi:id="_vvY7l1aJEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vvY7mFaJEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vvY7mlaJEd67T6XSEZbabw" name="Update">
+        <eAnnotations xmi:id="_vvY7m1aJEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vvY7nFaJEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vvY7nlaJEd67T6XSEZbabw" name="ObserveEvent">
+        <eAnnotations xmi:id="_vvY7n1aJEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vvY7oFaJEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_eKorYFaJEd67T6XSEZbabw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_eKm2MFaJEd67T6XSEZbabw/5" nsPrefix="CallbackSeq">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eKorYVaJEd67T6XSEZbabw" name="CallerPort">
+        <eAnnotations xmi:id="_eKorYlaJEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eKorY1aJEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eKorZVaJEd67T6XSEZbabw" name="CallBackPort">
+        <eAnnotations xmi:id="_eKorZlaJEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eKorZ1aJEd67T6XSEZbabw" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eKoraVaJEd67T6XSEZbabw" name="Update">
+        <eAnnotations xmi:id="_eKoralaJEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eKora1aJEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eKorbVaJEd67T6XSEZbabw" name="ObserveEvent">
+        <eAnnotations xmi:id="_eKorblaJEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eKorb1aJEd67T6XSEZbabw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_2ELxgFFGEd6VrKDDAaQsOA" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_2EJ8UFFGEd6VrKDDAaQsOA/4" nsPrefix="CallbackSeq">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2ELxgVFGEd6VrKDDAaQsOA" name="CallerPort">
+        <eAnnotations xmi:id="_2ELxglFGEd6VrKDDAaQsOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2ELxg1FGEd6VrKDDAaQsOA" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2ELxhVFGEd6VrKDDAaQsOA" name="CallBackPort">
+        <eAnnotations xmi:id="_2ELxhlFGEd6VrKDDAaQsOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2ELxh1FGEd6VrKDDAaQsOA" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2ELxiVFGEd6VrKDDAaQsOA" name="Update">
+        <eAnnotations xmi:id="_2ELxilFGEd6VrKDDAaQsOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2ELxi1FGEd6VrKDDAaQsOA" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2ELxjVFGEd6VrKDDAaQsOA" name="ObserveEvent">
+        <eAnnotations xmi:id="_2ELxjlFGEd6VrKDDAaQsOA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2ELxj1FGEd6VrKDDAaQsOA" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_zka9kFEREd6cROqMFUXreA" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_zkZIYFEREd6cROqMFUXreA/3" nsPrefix="CallbackSeq">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zka9kVEREd6cROqMFUXreA" name="CallerPort">
+        <eAnnotations xmi:id="_zka9klEREd6cROqMFUXreA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zka9k1EREd6cROqMFUXreA" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zka9lVEREd6cROqMFUXreA" name="CallBackPort">
+        <eAnnotations xmi:id="_zka9llEREd6cROqMFUXreA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zka9l1EREd6cROqMFUXreA" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zka9mVEREd6cROqMFUXreA" name="Update">
+        <eAnnotations xmi:id="_zka9mlEREd6cROqMFUXreA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zka9m1EREd6cROqMFUXreA" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zka9nVEREd6cROqMFUXreA" name="ObserveEvent">
+        <eAnnotations xmi:id="_zka9nlEREd6cROqMFUXreA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zka9n1EREd6cROqMFUXreA" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zka9oVEREd6cROqMFUXreA" name="SendUpdate">
+        <eAnnotations xmi:id="_zka9olEREd6cROqMFUXreA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zka9o1EREd6cROqMFUXreA" name="base_MessageEnd" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//MessageEnd"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zka9pVEREd6cROqMFUXreA" name="ReceiveUpdate">
+        <eAnnotations xmi:id="_zka9plEREd6cROqMFUXreA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zka9p1EREd6cROqMFUXreA" name="base_MessageEnd" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//MessageEnd"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zka9qVEREd6cROqMFUXreA" name="SendObserveEvent">
+        <eAnnotations xmi:id="_zka9qlEREd6cROqMFUXreA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zka9q1EREd6cROqMFUXreA" name="base_MessageEnd" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//MessageEnd"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zka9rVEREd6cROqMFUXreA" name="ReceiveObserveEvent">
+        <eAnnotations xmi:id="_zka9rlEREd6cROqMFUXreA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zka9r1EREd6cROqMFUXreA" name="base_MessageEnd" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//MessageEnd"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_S8JhMFAcEd6ADvFaAvZ5pg" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_S8ITEFAcEd6ADvFaAvZ5pg/2" nsPrefix="CallbackSeq">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_S8JhMVAcEd6ADvFaAvZ5pg" name="CallerPort">
+        <eAnnotations xmi:id="_S8JhMlAcEd6ADvFaAvZ5pg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_D9FoQFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_S8JhM1AcEd6ADvFaAvZ5pg" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_S8JhNVAcEd6ADvFaAvZ5pg" name="CallBackPort">
+        <eAnnotations xmi:id="_S8JhNlAcEd6ADvFaAvZ5pg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_EYqxAFAZEd6ADvFaAvZ5pg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_S8JhN1AcEd6ADvFaAvZ5pg" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_S8JhOVAcEd6ADvFaAvZ5pg" name="Update">
+        <eAnnotations xmi:id="_S8JhOlAcEd6ADvFaAvZ5pg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yVhqsD-8Ed6J-u7AoaWO8Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_S8JhO1AcEd6ADvFaAvZ5pg" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_S8JhPVAcEd6ADvFaAvZ5pg" name="ObserveEvent">
+        <eAnnotations xmi:id="_S8JhPlAcEd6ADvFaAvZ5pg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_S8JhP1AcEd6ADvFaAvZ5pg" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_t-64ATr0Ed6Jw5ZoMqmVBQ" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_t-64ADr0Ed6Jw5ZoMqmVBQ/1" nsPrefix="CallbackSeq">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t-64Ajr0Ed6Jw5ZoMqmVBQ" name="IEvent">
+        <eAnnotations xmi:id="_t-64Azr0Ed6Jw5ZoMqmVBQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t-64BDr0Ed6Jw5ZoMqmVBQ" name="base_Interaction" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interaction"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t-64Bjr0Ed6Jw5ZoMqmVBQ" name="ICallback">
+        <eAnnotations xmi:id="_t-64Bzr0Ed6Jw5ZoMqmVBQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t-64CDr0Ed6Jw5ZoMqmVBQ" name="base_Interaction" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interaction"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t-64Cjr0Ed6Jw5ZoMqmVBQ" name="EventGate">
+        <eAnnotations xmi:id="_t-64Czr0Ed6Jw5ZoMqmVBQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t-64DDr0Ed6Jw5ZoMqmVBQ" name="base_Gate" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Gate"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t-64Djr0Ed6Jw5ZoMqmVBQ" name="CallbackGate">
+        <eAnnotations xmi:id="_t-64Dzr0Ed6Jw5ZoMqmVBQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t-64EDr0Ed6Jw5ZoMqmVBQ" name="base_Gate" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Gate"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t-64Ejr0Ed6Jw5ZoMqmVBQ" name="Callback">
+        <eAnnotations xmi:id="_t-64Ezr0Ed6Jw5ZoMqmVBQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t-64FDr0Ed6Jw5ZoMqmVBQ" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_t03rQi9bEd6Mz5zecd_Slw" name="CallbackSeq" nsURI="http:///schemas/CallbackSeq/_t03rQC9bEd6Mz5zecd_Slw/0" nsPrefix="CallbackSeq">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t03rQy9bEd6Mz5zecd_Slw" name="IEvent">
+        <eAnnotations xmi:id="_t03rRC9bEd6Mz5zecd_Slw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t03rRS9bEd6Mz5zecd_Slw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t03rRy9bEd6Mz5zecd_Slw" name="ICallback">
+        <eAnnotations xmi:id="_t03rSC9bEd6Mz5zecd_Slw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t03rSS9bEd6Mz5zecd_Slw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t03rSy9bEd6Mz5zecd_Slw" name="EventPort">
+        <eAnnotations xmi:id="_t03rTC9bEd6Mz5zecd_Slw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t03rTS9bEd6Mz5zecd_Slw" name="base_MessageEnd" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//MessageEnd"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t03rTy9bEd6Mz5zecd_Slw" name="CallbackPort">
+        <eAnnotations xmi:id="_t03rUC9bEd6Mz5zecd_Slw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t03rUS9bEd6Mz5zecd_Slw" name="base_MessageEnd" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//MessageEnd"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_t03rUy9bEd6Mz5zecd_Slw" name="Callback">
+        <eAnnotations xmi:id="_t03rVC9bEd6Mz5zecd_Slw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_TyOwIC9YEd6Mz5zecd_Slw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_t03rVS9bEd6Mz5zecd_Slw" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_CSfusFAZEd6ADvFaAvZ5pg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+  </elementImport>
+  <elementImport xmi:id="_i7RqUS9BEd6Mz5zecd_Slw">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+  </elementImport>
+  <ownedRule xmi:id="_v1u9sFaVEd67T6XSEZbabw" name="CallerP">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_ws7rcFaVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_0Xl_UFaVEd67T6XSEZbabw" name="CallBackP">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_0Xl_UVaVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Lifeline.allInstances()->exists(lifeline|(lifeline.getAppliedStereotypes()->collect(name)->includes('CallBackP')) and not (lifeline.getAppliedStereotypes()->collect(name)->includes('CallerP')))</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_5lAfYFaVEd67T6XSEZbabw" name="Update">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_5lAfYVaVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')))</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_5lAfYlaVEd67T6XSEZbabw" name="UpdateMessageEnds">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_5lAfY1aVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('Update')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_6RaSYFaVEd67T6XSEZbabw" name="UpdateSendEvent">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_6RaSYVaVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_6RaSYlaVEd67T6XSEZbabw" name="UpdateReceiveEvent">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_6RaSY1aVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('Update'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_6RaSZFaVEd67T6XSEZbabw" name="ObserveEvent">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_6RaSZVaVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')))</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_7qch4laVEd67T6XSEZbabw" name="ObserveEventMessageEnds">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_7qch41aVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Message.allInstances()->exists(message|(message.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) and message.sendEvent->size() = 1 and message.receiveEvent->size() = 1)</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_6RaSZlaVEd67T6XSEZbabw" name="ObserveEventSendEvent">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_6RaSZ1aVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Message.allInstances().sendEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallBackP'))->notEmpty())</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_7qch4FaVEd67T6XSEZbabw" name="ObserveEventReceiveEvent">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_7qch4VaVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Message.allInstances().receiveEvent->exists(m|m->collect(message)->select(mess|mess.getAppliedStereotypes()->collect(name)->includes('ObserveEvent'))->notEmpty() and m->collect(mend|mend.oclAsType(InteractionFragment)->collect(covered))->select(ll|ll.getAppliedStereotypes()->collect(name)->includes('CallerP'))->notEmpty())</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_7qch5FaVEd67T6XSEZbabw" name="UpdateSend=ObserveReceive">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_7qch5VaVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll))</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_7qch5laVEd67T6XSEZbabw" name="UpdateReceive=ObserveSend">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_7qch51aVEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>Lifeline.allInstances()->exists(ll|Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('Update')).receiveEvent.oclAsType(InteractionFragment).covered->includes(ll) and Message.allInstances()->select(m|m.getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).sendEvent.oclAsType(InteractionFragment).covered->includes(ll))</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_5711kFaWEd67T6XSEZbabw" name="SendUpdate&lt;ReceiveObserve">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_5711kVaWEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>let m1 : Message = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')) in m1.sendEvent.oclAsType(OccurrenceSpecification).toAfter->notEmpty() and m1.sendEvent.oclAsType(OccurrenceSpecification).toAfter = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')).receiveEvent.oclAsType(OccurrenceSpecification).toBefore</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:id="_5711klaWEd67T6XSEZbabw" name="ReceiveUpdate&lt;SendObserve">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_5711k1aWEd67T6XSEZbabw">
+      <language>OCL</language>
+      <body>let m2 : Message = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('ObserveEvent')) in m2.receiveEvent.oclAsType(OccurrenceSpecification).toBefore->notEmpty() and m2.receiveEvent.oclAsType(OccurrenceSpecification).toBefore = Message.allInstances()->any(getAppliedStereotypes()->collect(name)->includes('Update')).sendEvent.oclAsType(OccurrenceSpecification).toAfter</body>
+    </specification>
+  </ownedRule>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_D9FoQFAZEd6ADvFaAvZ5pg" name="CallerP">
+    <ownedAttribute xmi:id="_N9YogVAZEd6ADvFaAvZ5pg" name="base_Lifeline" association="_N9YBcFAZEd6ADvFaAvZ5pg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_EYqxAFAZEd6ADvFaAvZ5pg" name="CallBackP">
+    <ownedAttribute xmi:id="_PN84gFAZEd6ADvFaAvZ5pg" name="base_Lifeline" association="_PN8RcFAZEd6ADvFaAvZ5pg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_yVhqsD-8Ed6J-u7AoaWO8Q" name="Update">
+    <ownedAttribute xmi:id="_oIgKMFAcEd6ADvFaAvZ5pg" name="base_Message" association="_oIfjIFAcEd6ADvFaAvZ5pg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_TyOwIC9YEd6Mz5zecd_Slw" name="ObserveEvent">
+    <ownedAttribute xmi:id="_pdVPIlAcEd6ADvFaAvZ5pg" name="base_Message" association="_pdVPIFAcEd6ADvFaAvZ5pg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_N9YBcFAZEd6ADvFaAvZ5pg" name="Lifeline_CallerP" memberEnd="_N9YogFAZEd6ADvFaAvZ5pg _N9YogVAZEd6ADvFaAvZ5pg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_N9YogFAZEd6ADvFaAvZ5pg" name="extension_CallerP" type="_D9FoQFAZEd6ADvFaAvZ5pg" aggregation="composite" association="_N9YBcFAZEd6ADvFaAvZ5pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_PN8RcFAZEd6ADvFaAvZ5pg" name="Lifeline_CallBackP" memberEnd="_PN8RcVAZEd6ADvFaAvZ5pg _PN84gFAZEd6ADvFaAvZ5pg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_PN8RcVAZEd6ADvFaAvZ5pg" name="extension_CallBackP" type="_EYqxAFAZEd6ADvFaAvZ5pg" aggregation="composite" association="_PN8RcFAZEd6ADvFaAvZ5pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_oIfjIFAcEd6ADvFaAvZ5pg" name="Message_Update" memberEnd="_oIfjIVAcEd6ADvFaAvZ5pg _oIgKMFAcEd6ADvFaAvZ5pg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_oIfjIVAcEd6ADvFaAvZ5pg" name="extension_Update" type="_yVhqsD-8Ed6J-u7AoaWO8Q" aggregation="composite" association="_oIfjIFAcEd6ADvFaAvZ5pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_pdVPIFAcEd6ADvFaAvZ5pg" name="Message_ObserveEvent" memberEnd="_pdVPIVAcEd6ADvFaAvZ5pg _pdVPIlAcEd6ADvFaAvZ5pg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pdVPIVAcEd6ADvFaAvZ5pg" name="extension_ObserveEvent" type="_TyOwIC9YEd6Mz5zecd_Slw" aggregation="composite" association="_pdVPIFAcEd6ADvFaAvZ5pg"/>
+  </packagedElement>
+</uml:Profile>

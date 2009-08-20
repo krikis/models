@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CallbackSeq="http:///schemas/CallbackSeq/_eS1lgFbTEd62nu7Yx4gMbw/13" xmlns:MVCSeq="http:///schemas/MVCSeq/_ANY9MFeJEd6PrsI4sxIG7w/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/CallbackSeq/_eS1lgFbTEd62nu7Yx4gMbw/13 CallbackSeqProfile.uml#_eS2MkFbTEd62nu7Yx4gMbw http:///schemas/MVCSeq/_ANY9MFeJEd6PrsI4sxIG7w/0 MVCSeqProfile.uml#_ANaLUVeJEd6PrsI4sxIG7w">
+  <uml:Package xmi:id="_Kc76YFeJEd6PrsI4sxIG7w" name="MVC">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_NCXEgFeJEd6PrsI4sxIG7w" name="MVCSequence">
+      <generalOrdering xmi:id="_KU2FMFqFEd64wbK5K2jm8w" name="CallerOccurrences" before="_UHG5oFeJEd6PrsI4sxIG7w" after="__XgYcFqFEd64wbK5K2jm8w"/>
+      <generalOrdering xmi:id="_Kl5Y8FqFEd64wbK5K2jm8w" name="CallBackOccurrences" before="_UcnPkFeJEd6PrsI4sxIG7w" after="_-5UAkFqFEd64wbK5K2jm8w"/>
+      <lifeline xmi:id="_Qo2DAFeJEd6PrsI4sxIG7w" name="ViewDataPLifeline" coveredBy="_UHG5oFeJEd6PrsI4sxIG7w __XgYcFqFEd64wbK5K2jm8w"/>
+      <lifeline xmi:id="_Q2bzEFeJEd6PrsI4sxIG7w" name="ModelDataPLifeline" coveredBy="_UcnPkFeJEd6PrsI4sxIG7w _-5UAkFqFEd64wbK5K2jm8w"/>
+      <lifeline xmi:id="_SR6SkFeJEd6PrsI4sxIG7w" name="ControlUpdatePLifeline" coveredBy="_VutJkFeJEd6PrsI4sxIG7w"/>
+      <lifeline xmi:id="_RE7iEFeJEd6PrsI4sxIG7w" name="ViewUpdatePLifeline" coveredBy="_VUFDEFeJEd6PrsI4sxIG7w"/>
+      <lifeline xmi:id="_SbJHEFeJEd6PrsI4sxIG7w" name="ControlCommandPLifeline" coveredBy="_VutJkVeJEd6PrsI4sxIG7w"/>
+      <lifeline xmi:id="_SkTDEFeJEd6PrsI4sxIG7w" name="ModelCommandPLifeline" coveredBy="_VutJkleJEd6PrsI4sxIG7w"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UHG5oFeJEd6PrsI4sxIG7w" name="" covered="_Qo2DAFeJEd6PrsI4sxIG7w" event="_PmeAAFeJEd6PrsI4sxIG7w" toAfter="_KU2FMFqFEd64wbK5K2jm8w" message="_SEUigFeJEd6PrsI4sxIG7w"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UcnPkFeJEd6PrsI4sxIG7w" name="" covered="_Q2bzEFeJEd6PrsI4sxIG7w" event="_PmeAAFeJEd6PrsI4sxIG7w" toAfter="_Kl5Y8FqFEd64wbK5K2jm8w" message="_SEUigFeJEd6PrsI4sxIG7w"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VutJkFeJEd6PrsI4sxIG7w" covered="_SR6SkFeJEd6PrsI4sxIG7w" event="_P3uIEFeJEd6PrsI4sxIG7w" message="_S2YRkFeJEd6PrsI4sxIG7w"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VUFDEFeJEd6PrsI4sxIG7w" covered="_RE7iEFeJEd6PrsI4sxIG7w" event="_P3uIEFeJEd6PrsI4sxIG7w" message="_S2YRkFeJEd6PrsI4sxIG7w"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VutJkVeJEd6PrsI4sxIG7w" covered="_SbJHEFeJEd6PrsI4sxIG7w" event="_QJ9HkFeJEd6PrsI4sxIG7w" message="_TKNzkFeJEd6PrsI4sxIG7w"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VutJkleJEd6PrsI4sxIG7w" covered="_SkTDEFeJEd6PrsI4sxIG7w" event="_QJ9HkFeJEd6PrsI4sxIG7w" message="_TKNzkFeJEd6PrsI4sxIG7w"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-5UAkFqFEd64wbK5K2jm8w" name="" covered="_Q2bzEFeJEd6PrsI4sxIG7w" toBefore="_Kl5Y8FqFEd64wbK5K2jm8w" event="_NOgkgFqGEd64wbK5K2jm8w" message="_CwNZoFqGEd64wbK5K2jm8w"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__XgYcFqFEd64wbK5K2jm8w" name="" covered="_Qo2DAFeJEd6PrsI4sxIG7w" toBefore="_KU2FMFqFEd64wbK5K2jm8w" event="_NOgkgFqGEd64wbK5K2jm8w" message="_CwNZoFqGEd64wbK5K2jm8w"/>
+      <message xmi:id="_SEUigFeJEd6PrsI4sxIG7w" name="DataMessage" receiveEvent="_UcnPkFeJEd6PrsI4sxIG7w" sendEvent="_UHG5oFeJEd6PrsI4sxIG7w"/>
+      <message xmi:id="_S2YRkFeJEd6PrsI4sxIG7w" name="UpdateMessage" receiveEvent="_VUFDEFeJEd6PrsI4sxIG7w" sendEvent="_VutJkFeJEd6PrsI4sxIG7w"/>
+      <message xmi:id="_TKNzkFeJEd6PrsI4sxIG7w" name="CommandMessage" receiveEvent="_VutJkleJEd6PrsI4sxIG7w" sendEvent="_VutJkVeJEd6PrsI4sxIG7w"/>
+      <message xmi:id="_CwNZoFqGEd64wbK5K2jm8w" name="ObserveEvent" receiveEvent="__XgYcFqFEd64wbK5K2jm8w" sendEvent="_-5UAkFqFEd64wbK5K2jm8w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_PmeAAFeJEd6PrsI4sxIG7w" name="Data"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_P3uIEFeJEd6PrsI4sxIG7w" name="Update"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_QJ9HkFeJEd6PrsI4sxIG7w" name="Command"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_NOgkgFqGEd64wbK5K2jm8w" name="ObserveEvent"/>
+    <profileApplication xmi:id="_UKcEAFeVEd6PrsI4sxIG7w">
+      <eAnnotations xmi:id="_UKdSIFeVEd6PrsI4sxIG7w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="MVCSeqProfile.uml#_ANaLUVeJEd6PrsI4sxIG7w"/>
+      </eAnnotations>
+      <appliedProfile href="MVCSeqProfile.uml#_43vpgFeBEd6PrsI4sxIG7w"/>
+    </profileApplication>
+    <profileApplication xmi:id="_4GdzwFqFEd64wbK5K2jm8w">
+      <eAnnotations xmi:id="_4GheIFqFEd64wbK5K2jm8w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="CallbackSeqProfile.uml#_eS2MkFbTEd62nu7Yx4gMbw"/>
+      </eAnnotations>
+      <appliedProfile href="CallbackSeqProfile.uml#_0fKqwC80Ed6Mz5zecd_Slw"/>
+    </profileApplication>
+  </uml:Package>
+  <MVCSeq:ViewDataPInstance xmi:id="_WLdgkFeVEd6PrsI4sxIG7w" base_Lifeline="_Qo2DAFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ModelDataPInstance xmi:id="_Xurm0FeVEd6PrsI4sxIG7w" base_Lifeline="_Q2bzEFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ViewUpdatePInstance xmi:id="_Ynwj4FeVEd6PrsI4sxIG7w" base_Lifeline="_RE7iEFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ControlUpdatePInstance xmi:id="_ZrWu4FeVEd6PrsI4sxIG7w" base_Lifeline="_SR6SkFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ControlCommandPInstance xmi:id="_a0N0YFeVEd6PrsI4sxIG7w" base_Lifeline="_SbJHEFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ModelCommandPInstance xmi:id="_cEoTYFeVEd6PrsI4sxIG7w" base_Lifeline="_SkTDEFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:DataMessage xmi:id="_eMqW4FeVEd6PrsI4sxIG7w" base_Message="_SEUigFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:UpdateMessage xmi:id="_fhbxcFeVEd6PrsI4sxIG7w" base_Message="_S2YRkFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:CommandMessage xmi:id="_g4uUgFeVEd6PrsI4sxIG7w" base_Message="_TKNzkFeJEd6PrsI4sxIG7w"/>
+  <CallbackSeq:CallerP xmi:id="_6Ze_QFqFEd64wbK5K2jm8w" base_Lifeline="_Qo2DAFeJEd6PrsI4sxIG7w"/>
+  <CallbackSeq:CallBackP xmi:id="_7suIwFqFEd64wbK5K2jm8w" base_Lifeline="_Q2bzEFeJEd6PrsI4sxIG7w"/>
+  <CallbackSeq:Update xmi:id="_Bjo40FqGEd64wbK5K2jm8w" base_Message="_SEUigFeJEd6PrsI4sxIG7w"/>
+  <CallbackSeq:ObserveEvent xmi:id="_Fv5d4FqGEd64wbK5K2jm8w" base_Message="_CwNZoFqGEd64wbK5K2jm8w"/>
+  <MVCSeq:ViewDataPInstance xmi:id="_Jry2QHCAEd6bxa-xPqaJwA" base_Lifeline="_Qo2DAFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ModelDataPInstance xmi:id="_LqGWAHCAEd6bxa-xPqaJwA" base_Lifeline="_Q2bzEFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ControlUpdatePInstance xmi:id="_NZ2cYHCAEd6bxa-xPqaJwA" base_Lifeline="_SR6SkFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ViewUpdatePInstance xmi:id="_OZzdgHCAEd6bxa-xPqaJwA" base_Lifeline="_RE7iEFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ControlCommandPInstance xmi:id="_Qg6T8HCAEd6bxa-xPqaJwA" base_Lifeline="_SbJHEFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:ModelCommandPInstance xmi:id="_SACkYHCAEd6bxa-xPqaJwA" base_Lifeline="_SkTDEFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:DataMessage xmi:id="_UlbSQHCAEd6bxa-xPqaJwA" base_Message="_SEUigFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:UpdateMessage xmi:id="_XLJXUHCAEd6bxa-xPqaJwA" base_Message="_S2YRkFeJEd6PrsI4sxIG7w"/>
+  <MVCSeq:CommandMessage xmi:id="_YKq6oHCAEd6bxa-xPqaJwA" base_Message="_TKNzkFeJEd6PrsI4sxIG7w"/>
+</xmi:XMI>

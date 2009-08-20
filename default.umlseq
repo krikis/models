@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:uml2t.seqd.notation="http://www.eclipse.org/mdt/uml2tools/sequence-diagram/notation/2008" xmi:id="_UTvjEINdEd65wIhP2gNMmg" type="UMLSequence" name="default.umlseq" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_Y_6XQINdEd65wIhP2gNMmg" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Y_6-UINdEd65wIhP2gNMmg" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_ZdSPwINdEd65wIhP2gNMmg" type="3001" fontName="Lucida Grande">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZdS20INdEd65wIhP2gNMmg" type="5001"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZdS20YNdEd65wIhP2gNMmg" type="5005"/>
+      <children xmi:type="notation:Shape" xmi:id="_av0OoINdEd65wIhP2gNMmg" type="3004" fontName="Lucida Grande">
+        <element xmi:type="uml:BehaviorExecutionSpecification" href="default.uml#_avZX4INdEd65wIhP2gNMmg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_av0OoYNdEd65wIhP2gNMmg" x="20" y="112" width="20" height="24"/>
+      </children>
+      <element xmi:type="uml:Lifeline" href="default.uml#_Zc5OMINdEd65wIhP2gNMmg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZdSPwYNdEd65wIhP2gNMmg" x="51" y="28" width="60" height="300"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Z1G54INdEd65wIhP2gNMmg" type="3001" fontName="Lucida Grande">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z1G54oNdEd65wIhP2gNMmg" type="5001"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z1Hg8INdEd65wIhP2gNMmg" type="5005"/>
+      <children xmi:type="notation:Shape" xmi:id="_av01sINdEd65wIhP2gNMmg" type="3004" fontName="Lucida Grande">
+        <element xmi:type="uml:BehaviorExecutionSpecification" href="default.uml#_avZX4YNdEd65wIhP2gNMmg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_av01sYNdEd65wIhP2gNMmg" x="20" y="112" width="20" height="24"/>
+      </children>
+      <element xmi:type="uml:Lifeline" href="default.uml#_Z010IINdEd65wIhP2gNMmg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z1G54YNdEd65wIhP2gNMmg" x="442" y="28" width="60" height="300"/>
+    </children>
+    <styles xmi:type="uml2t.seqd.notation:SDModelStorageStyle" xmi:id="_Y_6XQYNdEd65wIhP2gNMmg"/>
+    <element xmi:type="uml:Interaction" href="default.uml#_Y-wgsINdEd65wIhP2gNMmg"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y_6XQoNdEd65wIhP2gNMmg" x="90" y="63" width="748" height="352"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_UTvjEYNdEd65wIhP2gNMmg"/>
+  <element xmi:type="uml:Package" href="default.uml#_UTrRoINdEd65wIhP2gNMmg"/>
+  <edges xmi:type="notation:Edge" xmi:id="_awOeUINdEd65wIhP2gNMmg" type="4001" source="_av0OoINdEd65wIhP2gNMmg" target="_av01sINdEd65wIhP2gNMmg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_awOeVINdEd65wIhP2gNMmg" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_awOeVYNdEd65wIhP2gNMmg" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_awOeUYNdEd65wIhP2gNMmg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_awOeUoNdEd65wIhP2gNMmg" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:IntListValueStyle" xmi:id="_awu0oINdEd65wIhP2gNMmg" name="SourceAnchor">
+      <intListValue>181</intListValue>
+      <intListValue>203</intListValue>
+    </styles>
+    <styles xmi:type="notation:IntListValueStyle" xmi:id="_awvbsYNdEd65wIhP2gNMmg" name="TargetAnchor">
+      <intListValue>552</intListValue>
+      <intListValue>203</intListValue>
+    </styles>
+    <element xmi:type="uml:Message" href="default.uml#_avamAINdEd65wIhP2gNMmg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_awOeU4NdEd65wIhP2gNMmg" points="[30, -3, -361, -3]$[402, -150, 11, -150]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_awuNkINdEd65wIhP2gNMmg" id="(1.0,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_awvbsINdEd65wIhP2gNMmg" id="(0.0,0.0)"/>
+  </edges>
+</notation:Diagram>

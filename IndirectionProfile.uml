@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_siGXYBoIEd6fJO4W4FZ3Ow" name="Indirection" metaclassReference="_0FepQBoIEd6fJO4W4FZ3Ow _0FepQRoIEd6fJO4W4FZ3Ow _0FepQhoIEd6fJO4W4FZ3Ow">
+  <eAnnotations xmi:id="_hwUfwRocEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_hwUfwhocEd6fJO4W4FZ3Ow" name="Indirection" nsURI="http:///schemas/Indirection/_hwUfwBocEd6fJO4W4FZ3Ow/0" nsPrefix="Indirection">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_hwUfwxocEd6fJO4W4FZ3Ow" name="Indirector">
+        <eAnnotations xmi:id="_hwUfxBocEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_5VP5wBoIEd6fJO4W4FZ3Ow"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hwUfxRocEd6fJO4W4FZ3Ow" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Interface"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_hwUfxxocEd6fJO4W4FZ3Ow" name="ITarget">
+        <eAnnotations xmi:id="_hwUfyBocEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_6vGooBoIEd6fJO4W4FZ3Ow"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hwUfyRocEd6fJO4W4FZ3Ow" name="base_Interface" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Interface"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_hwUfyxocEd6fJO4W4FZ3Ow" name="IndirectionPort">
+        <eAnnotations xmi:id="_hwUfzBocEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7DjOoBoIEd6fJO4W4FZ3Ow"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hwUfzRocEd6fJO4W4FZ3Ow" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_hwUfzxocEd6fJO4W4FZ3Ow" name="IndirectionTargetPort">
+        <eAnnotations xmi:id="_hwUf0BocEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7X_0oBoIEd6fJO4W4FZ3Ow"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hwUf0RocEd6fJO4W4FZ3Ow" name="base_Port" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Port"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_hwUf0xocEd6fJO4W4FZ3Ow" name="Indirection">
+        <eAnnotations xmi:id="_hwUf1BocEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7-OHIBoIEd6fJO4W4FZ3Ow"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hwUf1RocEd6fJO4W4FZ3Ow" name="base_Connector" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Connector"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_0FepQBoIEd6fJO4W4FZ3Ow">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Connector"/>
+  </elementImport>
+  <elementImport xmi:id="_0FepQRoIEd6fJO4W4FZ3Ow">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+  </elementImport>
+  <elementImport xmi:id="_0FepQhoIEd6fJO4W4FZ3Ow">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_5VP5wBoIEd6fJO4W4FZ3Ow" name="Indirector">
+    <ownedAttribute xmi:id="_IKeoohoJEd6fJO4W4FZ3Ow" name="base_Interface" association="_IKeooBoJEd6fJO4W4FZ3Ow">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_6vGooBoIEd6fJO4W4FZ3Ow" name="ITarget">
+    <ownedAttribute xmi:id="_JcqCMhoJEd6fJO4W4FZ3Ow" name="base_Interface" association="_JcqCMBoJEd6fJO4W4FZ3Ow">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_7DjOoBoIEd6fJO4W4FZ3Ow" name="IndirectionPort">
+    <ownedAttribute xmi:id="_KQYlMhoJEd6fJO4W4FZ3Ow" name="base_Port" association="_KQYlMBoJEd6fJO4W4FZ3Ow">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_7X_0oBoIEd6fJO4W4FZ3Ow" name="IndirectionTargetPort">
+    <ownedAttribute xmi:id="_LMg2QhoJEd6fJO4W4FZ3Ow" name="base_Port" association="_LMg2QBoJEd6fJO4W4FZ3Ow">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_7-OHIBoIEd6fJO4W4FZ3Ow" name="Indirection">
+    <ownedAttribute xmi:id="_MBA1UBoJEd6fJO4W4FZ3Ow" name="base_Connector" association="_MBAOQBoJEd6fJO4W4FZ3Ow">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Connector"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_IKeooBoJEd6fJO4W4FZ3Ow" name="Interface_Indirector" memberEnd="_IKeooRoJEd6fJO4W4FZ3Ow _IKeoohoJEd6fJO4W4FZ3Ow">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_IKeooRoJEd6fJO4W4FZ3Ow" name="extension_Indirector" type="_5VP5wBoIEd6fJO4W4FZ3Ow" aggregation="composite" association="_IKeooBoJEd6fJO4W4FZ3Ow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_JcqCMBoJEd6fJO4W4FZ3Ow" name="Interface_ITarget" memberEnd="_JcqCMRoJEd6fJO4W4FZ3Ow _JcqCMhoJEd6fJO4W4FZ3Ow">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_JcqCMRoJEd6fJO4W4FZ3Ow" name="extension_ITarget" type="_6vGooBoIEd6fJO4W4FZ3Ow" aggregation="composite" association="_JcqCMBoJEd6fJO4W4FZ3Ow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_KQYlMBoJEd6fJO4W4FZ3Ow" name="Port_IndirectionPort" memberEnd="_KQYlMRoJEd6fJO4W4FZ3Ow _KQYlMhoJEd6fJO4W4FZ3Ow">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_KQYlMRoJEd6fJO4W4FZ3Ow" name="extension_IndirectionPort" type="_7DjOoBoIEd6fJO4W4FZ3Ow" aggregation="composite" association="_KQYlMBoJEd6fJO4W4FZ3Ow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_LMg2QBoJEd6fJO4W4FZ3Ow" name="Port_IndirectionTargetPort" memberEnd="_LMg2QRoJEd6fJO4W4FZ3Ow _LMg2QhoJEd6fJO4W4FZ3Ow">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_LMg2QRoJEd6fJO4W4FZ3Ow" name="extension_IndirectionTargetPort" type="_7X_0oBoIEd6fJO4W4FZ3Ow" aggregation="composite" association="_LMg2QBoJEd6fJO4W4FZ3Ow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_MBAOQBoJEd6fJO4W4FZ3Ow" name="Connector_Indirection" memberEnd="_MBAOQRoJEd6fJO4W4FZ3Ow _MBA1UBoJEd6fJO4W4FZ3Ow">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MBAOQRoJEd6fJO4W4FZ3Ow" name="extension_Indirection" type="_7-OHIBoIEd6fJO4W4FZ3Ow" aggregation="composite" association="_MBAOQBoJEd6fJO4W4FZ3Ow"/>
+  </packagedElement>
+</uml:Profile>
