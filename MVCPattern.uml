@@ -25,9 +25,9 @@
       <ownedAttribute xmi:type="uml:Port" xmi:id="_txNuwIwrEd6vdKRnqZE9WA" name="" type="_UmA1IIwsEd6vdKRnqZE9WA"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_OkuLoIwtEd6vdKRnqZE9WA" type="_CYA-MIwtEd6vdKRnqZE9WA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_DM_JQIwrEd6vdKRnqZE9WA" name="Data"/>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_DupE0IwrEd6vdKRnqZE9WA" name="Update"/>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_D9cV0IwrEd6vdKRnqZE9WA" name="Command"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_DM_JQIwrEd6vdKRnqZE9WA" name="IData"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_DupE0IwrEd6vdKRnqZE9WA" name="IUpdate"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_D9cV0IwrEd6vdKRnqZE9WA" name="ICommand"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_7YI3cIwrEd6vdKRnqZE9WA" name="ModelData" clientDependency="_A21UwIwsEd6vdKRnqZE9WA">
       <interfaceRealization xmi:id="_A21UwIwsEd6vdKRnqZE9WA" supplier="_DM_JQIwrEd6vdKRnqZE9WA" client="_7YI3cIwrEd6vdKRnqZE9WA" contract="_DM_JQIwrEd6vdKRnqZE9WA"/>
     </packagedElement>
