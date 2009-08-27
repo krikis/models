@@ -52,16 +52,16 @@
   <element xmi:type="uml:Package" href="MVCSeq.uml#_P-cZEJL7Ed60q4NiehNL0Q"/>
   <edges xmi:type="notation:Edge" xmi:id="_WfGCoJL7Ed60q4NiehNL0Q" type="4001" source="_WfBxMJL7Ed60q4NiehNL0Q" target="_WfBxMpL7Ed60q4NiehNL0Q">
     <children xmi:type="notation:DecorationNode" xmi:id="_WfGCpJL7Ed60q4NiehNL0Q" type="6001">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_WfGCpZL7Ed60q4NiehNL0Q" y="-10"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WfGCpZL7Ed60q4NiehNL0Q" x="-3" y="-15"/>
     </children>
     <styles xmi:type="notation:RoutingStyle" xmi:id="_WfGCoZL7Ed60q4NiehNL0Q"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_WfGCopL7Ed60q4NiehNL0Q" fontName="Lucida Grande"/>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_WfJF8ZL7Ed60q4NiehNL0Q" name="SourceAnchor">
-      <intListValue>355</intListValue>
+      <intListValue>391</intListValue>
       <intListValue>142</intListValue>
     </styles>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_WfJF85L7Ed60q4NiehNL0Q" name="TargetAnchor">
-      <intListValue>615</intListValue>
+      <intListValue>651</intListValue>
       <intListValue>142</intListValue>
     </styles>
     <element xmi:type="uml:Message" href="MVCSeq.uml#_We2LBpL7Ed60q4NiehNL0Q"/>
@@ -71,16 +71,16 @@
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_Y71x4JL7Ed60q4NiehNL0Q" type="4001" source="_Y7vrQJL7Ed60q4NiehNL0Q" target="_Y7vrQpL7Ed60q4NiehNL0Q">
     <children xmi:type="notation:DecorationNode" xmi:id="_Y71x5JL7Ed60q4NiehNL0Q" type="6001">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_Y72Y8JL7Ed60q4NiehNL0Q" y="-10"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Y72Y8JL7Ed60q4NiehNL0Q" x="144" y="12"/>
     </children>
     <styles xmi:type="notation:RoutingStyle" xmi:id="_Y71x4ZL7Ed60q4NiehNL0Q"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_Y71x4pL7Ed60q4NiehNL0Q" fontName="Lucida Grande"/>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_Y741MZL7Ed60q4NiehNL0Q" name="SourceAnchor">
-      <intListValue>615</intListValue>
+      <intListValue>651</intListValue>
       <intListValue>211</intListValue>
     </styles>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_Y741M5L7Ed60q4NiehNL0Q" name="TargetAnchor">
-      <intListValue>79</intListValue>
+      <intListValue>115</intListValue>
       <intListValue>211</intListValue>
     </styles>
     <element xmi:type="uml:Message" href="MVCSeq.uml#_Y7nIYZL7Ed60q4NiehNL0Q"/>
@@ -95,11 +95,11 @@
     <styles xmi:type="notation:RoutingStyle" xmi:id="_cjKd4ZL7Ed60q4NiehNL0Q"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_cjKd4pL7Ed60q4NiehNL0Q" fontName="Lucida Grande"/>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_cjPWYJL7Ed60q4NiehNL0Q" name="SourceAnchor">
-      <intListValue>79</intListValue>
+      <intListValue>115</intListValue>
       <intListValue>274</intListValue>
     </styles>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_cjPWYZL7Ed60q4NiehNL0Q" name="TargetAnchor">
-      <intListValue>335</intListValue>
+      <intListValue>371</intListValue>
       <intListValue>274</intListValue>
     </styles>
     <element xmi:type="uml:Message" href="MVCSeq.uml#_ci70YJL7Ed60q4NiehNL0Q"/>
