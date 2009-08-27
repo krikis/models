@@ -23,8 +23,8 @@
       <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ci7NUJL7Ed60q4NiehNL0Q" name="execution-3-body" covered="_UCbL4JL7Ed60q4NiehNL0Q" start="_ci6mQJL7Ed60q4NiehNL0Q" finish="_ci7NUZL7Ed60q4NiehNL0Q"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ci7NUZL7Ed60q4NiehNL0Q" name="execution-3-finish" covered="_UCbL4JL7Ed60q4NiehNL0Q"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ci7NUpL7Ed60q4NiehNL0Q" name="invocation-3-finish" covered="_R4j8YJL7Ed60q4NiehNL0Q"/>
-      <message xmi:id="_We2LBpL7Ed60q4NiehNL0Q" name="executeCommand" receiveEvent="_We2LAZL7Ed60q4NiehNL0Q" sendEvent="_We2LAJL7Ed60q4NiehNL0Q"/>
-      <message xmi:id="_Y7nIYZL7Ed60q4NiehNL0Q" name="modifyData" receiveEvent="_Y7mhUZL7Ed60q4NiehNL0Q" sendEvent="_Y7mhUJL7Ed60q4NiehNL0Q"/>
+      <message xmi:id="_We2LBpL7Ed60q4NiehNL0Q" name="addUser" receiveEvent="_We2LAZL7Ed60q4NiehNL0Q" sendEvent="_We2LAJL7Ed60q4NiehNL0Q"/>
+      <message xmi:id="_Y7nIYZL7Ed60q4NiehNL0Q" name="createNewUser" receiveEvent="_Y7mhUZL7Ed60q4NiehNL0Q" sendEvent="_Y7mhUJL7Ed60q4NiehNL0Q"/>
       <message xmi:id="_ci70YJL7Ed60q4NiehNL0Q" name="updateView" receiveEvent="_ci6mQJL7Ed60q4NiehNL0Q" sendEvent="_ci4KAJL7Ed60q4NiehNL0Q"/>
     </packagedElement>
     <profileApplication xmi:id="_HK9p4JL-Ed60q4NiehNL0Q">
