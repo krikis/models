@@ -120,7 +120,7 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_MbLPwYwuEd6vdKRnqZE9WA" y="5"/>
     </children>
     <element xmi:type="uml:Interface" href="MVCPattern.uml#_D9cV0IwrEd6vdKRnqZE9WA"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MbKowIwuEd6vdKRnqZE9WA" x="432" y="279"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MbKowIwuEd6vdKRnqZE9WA" x="441" y="279"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_MbLPwowuEd6vdKRnqZE9WA" type="2004" fontName="Lucida Grande">
     <children xmi:type="notation:DecorationNode" xmi:id="_MbLPxYwuEd6vdKRnqZE9WA" type="5008"/>

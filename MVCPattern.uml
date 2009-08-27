@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MVC="http:///schemas/MVC/_TbWh4I12Ed6UntVN22ZQ4w/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/MVC/_TbWh4I12Ed6UntVN22ZQ4w/4 MVCProfile.uml#_TbYXEI12Ed6UntVN22ZQ4w">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MVC="http:///schemas/MVC/_JQxoMJLwEd60q4NiehNL0Q/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/MVC/_JQxoMJLwEd60q4NiehNL0Q/0 MVCProfile.uml#_JQzdYZLwEd60q4NiehNL0Q">
   <uml:Package xmi:id="_xbO-4IwqEd6vdKRnqZE9WA" name="">
     <elementImport xmi:id="_xb67YIwqEd6vdKRnqZE9WA">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -43,20 +43,17 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_CYA-MYwtEd6vdKRnqZE9WA" name="ViewCommand" clientDependency="_CYA-MowtEd6vdKRnqZE9WA"/>
     <packagedElement xmi:type="uml:Usage" xmi:id="_CYA-MowtEd6vdKRnqZE9WA" supplier="_D9cV0IwrEd6vdKRnqZE9WA" client="_CYA-MYwtEd6vdKRnqZE9WA"/>
-    <profileApplication xmi:id="_aqmW0I12Ed6UntVN22ZQ4w">
-      <eAnnotations xmi:id="_aqoMAI12Ed6UntVN22ZQ4w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="MVCProfile.uml#_TbYXEI12Ed6UntVN22ZQ4w"/>
+    <profileApplication xmi:id="_KYbIkJL3Ed60q4NiehNL0Q">
+      <eAnnotations xmi:id="_KYbvoJL3Ed60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="MVCProfile.uml#_JQzdYZLwEd60q4NiehNL0Q"/>
       </eAnnotations>
-      <appliedProfile href="MVCProfile.uml#_fcEmMAj6Ed6Up9Iq_uAkVA"/>
+      <appliedProfile href="MVCProfile.uml#_igl44JLrEd60q4NiehNL0Q"/>
     </profileApplication>
   </uml:Package>
-  <MVC:ModelDataPort xmi:id="_fUJ74I12Ed6UntVN22ZQ4w" base_Port="_kS5aMIwrEd6vdKRnqZE9WA"/>
-  <MVC:ViewDataPort xmi:id="_75qjwI12Ed6UntVN22ZQ4w" base_Port="_NyNwoIwtEd6vdKRnqZE9WA"/>
-  <MVC:ViewUpdatePort xmi:id="_9FA8kI12Ed6UntVN22ZQ4w" base_Port="_lkJmsIwrEd6vdKRnqZE9WA"/>
-  <MVC:ModelCommandPort xmi:id="_-2SF4I12Ed6UntVN22ZQ4w" base_Port="_N_4ZMIwtEd6vdKRnqZE9WA"/>
-  <MVC:ControlUpdatePort xmi:id="__6y24I12Ed6UntVN22ZQ4w" base_Port="_txNuwIwrEd6vdKRnqZE9WA"/>
-  <MVC:ControlCommandPort xmi:id="_BBZ5oI13Ed6UntVN22ZQ4w" base_Port="_OkuLoIwtEd6vdKRnqZE9WA"/>
-  <MVC:DataInterface xmi:id="_HdpkUI13Ed6UntVN22ZQ4w" base_Interface="_DM_JQIwrEd6vdKRnqZE9WA"/>
-  <MVC:UpdateInterface xmi:id="_IVzUUI13Ed6UntVN22ZQ4w" base_Interface="_DupE0IwrEd6vdKRnqZE9WA"/>
-  <MVC:CommandInterface xmi:id="_JG-SkI13Ed6UntVN22ZQ4w" base_Interface="_D9cV0IwrEd6vdKRnqZE9WA"/>
+  <MVC:Model xmi:id="_MwkrsJL3Ed60q4NiehNL0Q" base_Component="_1R8KsIwqEd6vdKRnqZE9WA"/>
+  <MVC:View xmi:id="_Nn-NwJL3Ed60q4NiehNL0Q" base_Component="_1f5HIIwqEd6vdKRnqZE9WA"/>
+  <MVC:Controller xmi:id="_OrzCQJL3Ed60q4NiehNL0Q" base_Component="_1u4lYIwqEd6vdKRnqZE9WA"/>
+  <MVC:DataInterface xmi:id="_RoVr4JL3Ed60q4NiehNL0Q" base_Interface="_DM_JQIwrEd6vdKRnqZE9WA"/>
+  <MVC:UpdateInterface xmi:id="_S5kqQJL3Ed60q4NiehNL0Q" base_Interface="_DupE0IwrEd6vdKRnqZE9WA"/>
+  <MVC:CommandInterface xmi:id="_T5XTUJL3Ed60q4NiehNL0Q" base_Interface="_D9cV0IwrEd6vdKRnqZE9WA"/>
 </xmi:XMI>
