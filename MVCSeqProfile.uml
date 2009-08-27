@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_a4OxoJLxEd60q4NiehNL0Q" name="MVC" metaclassReference="_efz8UJLxEd60q4NiehNL0Q _efz8UZLxEd60q4NiehNL0Q">
+  <eAnnotations xmi:id="_RpD24JLyEd60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_RpD24ZLyEd60q4NiehNL0Q" name="MVC" nsURI="http:///schemas/MVC/_RpDP0JLyEd60q4NiehNL0Q/0" nsPrefix="MVC">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RpD24pLyEd60q4NiehNL0Q" name="ModelInstance">
+        <eAnnotations xmi:id="_RpD245LyEd60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_hNwJQJLxEd60q4NiehNL0Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RpD25JLyEd60q4NiehNL0Q" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RpD25pLyEd60q4NiehNL0Q" name="ViewInstance">
+        <eAnnotations xmi:id="_RpD255LyEd60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_hjBOoJLxEd60q4NiehNL0Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RpD26JLyEd60q4NiehNL0Q" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RpD26pLyEd60q4NiehNL0Q" name="ControllerInstance">
+        <eAnnotations xmi:id="_RpD265LyEd60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_h0uCoJLxEd60q4NiehNL0Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RpD27JLyEd60q4NiehNL0Q" name="base_Lifeline" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Lifeline"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RpD27pLyEd60q4NiehNL0Q" name="DataMessage">
+        <eAnnotations xmi:id="_RpD275LyEd60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7jef0JLxEd60q4NiehNL0Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RpD28JLyEd60q4NiehNL0Q" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RpD28pLyEd60q4NiehNL0Q" name="UpdateMessage">
+        <eAnnotations xmi:id="_RpD285LyEd60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8FVPsJLxEd60q4NiehNL0Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RpD29JLyEd60q4NiehNL0Q" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RpGTIJLyEd60q4NiehNL0Q" name="CommandMessage">
+        <eAnnotations xmi:id="_RpGTIZLyEd60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8ZaCQJLxEd60q4NiehNL0Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RpGTIpLyEd60q4NiehNL0Q" name="base_Message" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Message"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_efz8UJLxEd60q4NiehNL0Q">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+  </elementImport>
+  <elementImport xmi:id="_efz8UZLxEd60q4NiehNL0Q">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_hNwJQJLxEd60q4NiehNL0Q" name="ModelInstance">
+    <ownedAttribute xmi:id="_4UvS8pLxEd60q4NiehNL0Q" name="base_Lifeline" association="_4UvS8JLxEd60q4NiehNL0Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_hjBOoJLxEd60q4NiehNL0Q" name="ViewInstance">
+    <ownedAttribute xmi:id="_5R9JIZLxEd60q4NiehNL0Q" name="base_Lifeline" association="_5R8iEJLxEd60q4NiehNL0Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_h0uCoJLxEd60q4NiehNL0Q" name="ControllerInstance">
+    <ownedAttribute xmi:id="_6lLrkJLxEd60q4NiehNL0Q" name="base_Lifeline" association="_6lLEgJLxEd60q4NiehNL0Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Lifeline"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_4UvS8JLxEd60q4NiehNL0Q" name="Lifeline_ModelInstance" memberEnd="_4UvS8ZLxEd60q4NiehNL0Q _4UvS8pLxEd60q4NiehNL0Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_4UvS8ZLxEd60q4NiehNL0Q" name="extension_ModelInstance" type="_hNwJQJLxEd60q4NiehNL0Q" aggregation="composite" association="_4UvS8JLxEd60q4NiehNL0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_5R8iEJLxEd60q4NiehNL0Q" name="Lifeline_ViewInstance" memberEnd="_5R9JIJLxEd60q4NiehNL0Q _5R9JIZLxEd60q4NiehNL0Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_5R9JIJLxEd60q4NiehNL0Q" name="extension_ViewInstance" type="_hjBOoJLxEd60q4NiehNL0Q" aggregation="composite" association="_5R8iEJLxEd60q4NiehNL0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_6lLEgJLxEd60q4NiehNL0Q" name="Lifeline_ControllerInstance" memberEnd="_6lLEgZLxEd60q4NiehNL0Q _6lLrkJLxEd60q4NiehNL0Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_6lLEgZLxEd60q4NiehNL0Q" name="extension_ControllerInstance" type="_h0uCoJLxEd60q4NiehNL0Q" aggregation="composite" association="_6lLEgJLxEd60q4NiehNL0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_7jef0JLxEd60q4NiehNL0Q" name="DataMessage">
+    <ownedAttribute xmi:id="_K7CfsJLyEd60q4NiehNL0Q" name="base_Message" association="_K7B4oJLyEd60q4NiehNL0Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_8FVPsJLxEd60q4NiehNL0Q" name="UpdateMessage">
+    <ownedAttribute xmi:id="_MkZDIpLyEd60q4NiehNL0Q" name="base_Message" association="_MkZDIJLyEd60q4NiehNL0Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_8ZaCQJLxEd60q4NiehNL0Q" name="CommandMessage">
+    <ownedAttribute xmi:id="_Nj1G4pLyEd60q4NiehNL0Q" name="base_Message" association="_Nj1G4JLyEd60q4NiehNL0Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_K7B4oJLyEd60q4NiehNL0Q" name="Message_DataMessage" memberEnd="_K7B4oZLyEd60q4NiehNL0Q _K7CfsJLyEd60q4NiehNL0Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_K7B4oZLyEd60q4NiehNL0Q" name="extension_DataMessage" type="_7jef0JLxEd60q4NiehNL0Q" aggregation="composite" association="_K7B4oJLyEd60q4NiehNL0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_MkZDIJLyEd60q4NiehNL0Q" name="Message_UpdateMessage" memberEnd="_MkZDIZLyEd60q4NiehNL0Q _MkZDIpLyEd60q4NiehNL0Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_MkZDIZLyEd60q4NiehNL0Q" name="extension_UpdateMessage" type="_8FVPsJLxEd60q4NiehNL0Q" aggregation="composite" association="_MkZDIJLyEd60q4NiehNL0Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Nj1G4JLyEd60q4NiehNL0Q" name="Message_CommandMessage" memberEnd="_Nj1G4ZLyEd60q4NiehNL0Q _Nj1G4pLyEd60q4NiehNL0Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Nj1G4ZLyEd60q4NiehNL0Q" name="extension_CommandMessage" type="_8ZaCQJLxEd60q4NiehNL0Q" aggregation="composite" association="_Nj1G4JLyEd60q4NiehNL0Q"/>
+  </packagedElement>
+</uml:Profile>
