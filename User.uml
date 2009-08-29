@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MVC="http:///schemas/MVC/_RpDP0JLyEd60q4NiehNL0Q/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/MVC/_RpDP0JLyEd60q4NiehNL0Q/0 MVCSeqProfile.uml#_RpD24ZLyEd60q4NiehNL0Q">
+  <uml:Package xmi:id="_P-cZEJL7Ed60q4NiehNL0Q">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_RDiY4JL7Ed60q4NiehNL0Q" name="Interaction">
+      <lifeline xmi:id="_R4j8YJL7Ed60q4NiehNL0Q" name="User" coveredBy="_Y7mhU5L7Ed60q4NiehNL0Q _Y7mhUZL7Ed60q4NiehNL0Q _Y7mhVJL7Ed60q4NiehNL0Q _ci6mQZL7Ed60q4NiehNL0Q _ci4KAJL7Ed60q4NiehNL0Q _ci7NUpL7Ed60q4NiehNL0Q"/>
+      <lifeline xmi:id="_UCbL4JL7Ed60q4NiehNL0Q" name="UserList" coveredBy="_We2LApL7Ed60q4NiehNL0Q _We2LAJL7Ed60q4NiehNL0Q _We2LBZL7Ed60q4NiehNL0Q _ci7NUJL7Ed60q4NiehNL0Q _ci6mQJL7Ed60q4NiehNL0Q _ci7NUZL7Ed60q4NiehNL0Q"/>
+      <lifeline xmi:id="_Uqji4JL7Ed60q4NiehNL0Q" name="UserContoller" coveredBy="_We2LA5L7Ed60q4NiehNL0Q _We2LAZL7Ed60q4NiehNL0Q _We2LBJL7Ed60q4NiehNL0Q _Y7mhUpL7Ed60q4NiehNL0Q _Y7mhUJL7Ed60q4NiehNL0Q _Y7nIYJL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_We2LAJL7Ed60q4NiehNL0Q" name="invocation-1-start" covered="_UCbL4JL7Ed60q4NiehNL0Q" message="_We2LBpL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_We2LAZL7Ed60q4NiehNL0Q" name="execution-1-start" covered="_Uqji4JL7Ed60q4NiehNL0Q" message="_We2LBpL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_We2LApL7Ed60q4NiehNL0Q" name="invocation-1-body" covered="_UCbL4JL7Ed60q4NiehNL0Q" start="_We2LAJL7Ed60q4NiehNL0Q" finish="_We2LBZL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_We2LA5L7Ed60q4NiehNL0Q" name="execution-1-body" covered="_Uqji4JL7Ed60q4NiehNL0Q" start="_We2LAZL7Ed60q4NiehNL0Q" finish="_We2LBJL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_We2LBJL7Ed60q4NiehNL0Q" name="execution-1-finish" covered="_Uqji4JL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y7mhUJL7Ed60q4NiehNL0Q" name="invocation-2-start" covered="_Uqji4JL7Ed60q4NiehNL0Q" message="_Y7nIYZL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y7mhUZL7Ed60q4NiehNL0Q" name="execution-2-start" covered="_R4j8YJL7Ed60q4NiehNL0Q" message="_Y7nIYZL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Y7mhUpL7Ed60q4NiehNL0Q" name="invocation-2-body" covered="_Uqji4JL7Ed60q4NiehNL0Q" start="_Y7mhUJL7Ed60q4NiehNL0Q" finish="_Y7nIYJL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Y7mhU5L7Ed60q4NiehNL0Q" name="execution-2-body" covered="_R4j8YJL7Ed60q4NiehNL0Q" start="_Y7mhUZL7Ed60q4NiehNL0Q" finish="_Y7mhVJL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y7mhVJL7Ed60q4NiehNL0Q" name="execution-2-finish" covered="_R4j8YJL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y7nIYJL7Ed60q4NiehNL0Q" name="invocation-2-finish" covered="_Uqji4JL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_We2LBZL7Ed60q4NiehNL0Q" name="invocation-1-finish" covered="_UCbL4JL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ci4KAJL7Ed60q4NiehNL0Q" name="invocation-3-start" covered="_R4j8YJL7Ed60q4NiehNL0Q" message="_ci70YJL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ci6mQJL7Ed60q4NiehNL0Q" name="execution-3-start" covered="_UCbL4JL7Ed60q4NiehNL0Q" message="_ci70YJL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ci6mQZL7Ed60q4NiehNL0Q" name="invocation-3-body" covered="_R4j8YJL7Ed60q4NiehNL0Q" start="_ci4KAJL7Ed60q4NiehNL0Q" finish="_ci7NUpL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ci7NUJL7Ed60q4NiehNL0Q" name="execution-3-body" covered="_UCbL4JL7Ed60q4NiehNL0Q" start="_ci6mQJL7Ed60q4NiehNL0Q" finish="_ci7NUZL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ci7NUZL7Ed60q4NiehNL0Q" name="execution-3-finish" covered="_UCbL4JL7Ed60q4NiehNL0Q"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ci7NUpL7Ed60q4NiehNL0Q" name="invocation-3-finish" covered="_R4j8YJL7Ed60q4NiehNL0Q"/>
+      <message xmi:id="_We2LBpL7Ed60q4NiehNL0Q" name="addUser" receiveEvent="_We2LAZL7Ed60q4NiehNL0Q" sendEvent="_We2LAJL7Ed60q4NiehNL0Q"/>
+      <message xmi:id="_Y7nIYZL7Ed60q4NiehNL0Q" name="createNewUser" receiveEvent="_Y7mhUZL7Ed60q4NiehNL0Q" sendEvent="_Y7mhUJL7Ed60q4NiehNL0Q"/>
+      <message xmi:id="_ci70YJL7Ed60q4NiehNL0Q" name="updateUserList" receiveEvent="_ci6mQJL7Ed60q4NiehNL0Q" sendEvent="_ci4KAJL7Ed60q4NiehNL0Q"/>
+    </packagedElement>
+    <profileApplication xmi:id="_HK9p4JL-Ed60q4NiehNL0Q">
+      <eAnnotations xmi:id="_HK9p4ZL-Ed60q4NiehNL0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="MVCSeqProfile.uml#_RpD24ZLyEd60q4NiehNL0Q"/>
+      </eAnnotations>
+      <appliedProfile href="MVCSeqProfile.uml#_a4OxoJLxEd60q4NiehNL0Q"/>
+    </profileApplication>
+  </uml:Package>
+  <MVC:ModelInstance xmi:id="_J6jcoJL-Ed60q4NiehNL0Q" base_Lifeline="_R4j8YJL7Ed60q4NiehNL0Q"/>
+  <MVC:ViewInstance xmi:id="_K-AdsJL-Ed60q4NiehNL0Q" base_Lifeline="_UCbL4JL7Ed60q4NiehNL0Q"/>
+  <MVC:ControllerInstance xmi:id="_LwlKIJL-Ed60q4NiehNL0Q" base_Lifeline="_Uqji4JL7Ed60q4NiehNL0Q"/>
+  <MVC:CommandMessage xmi:id="_OI2pEJL-Ed60q4NiehNL0Q" base_Message="_We2LBpL7Ed60q4NiehNL0Q"/>
+  <MVC:DataMessage xmi:id="_PHVqkJL-Ed60q4NiehNL0Q" base_Message="_Y7nIYZL7Ed60q4NiehNL0Q"/>
+  <MVC:UpdateMessage xmi:id="_QWkd0JL-Ed60q4NiehNL0Q" base_Message="_ci70YJL7Ed60q4NiehNL0Q"/>
+</xmi:XMI>
