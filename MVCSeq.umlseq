@@ -42,7 +42,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y7vrQZL7Ed60q4NiehNL0Q" x="25" y="168" width="20" height="24"/>
       </children>
       <element xmi:type="uml:Lifeline" href="MVCSeq.uml#_Uqji4JL7Ed60q4NiehNL0Q"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UqresZL7Ed60q4NiehNL0Q" x="580" y="28" width="70" height="306"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UqresZL7Ed60q4NiehNL0Q" x="580" y="28" width="90" height="306"/>
     </children>
     <styles xmi:type="uml2t.seqd.notation:SDModelStorageStyle" xmi:id="_RDsJ4ZL7Ed60q4NiehNL0Q"/>
     <element xmi:type="uml:Interaction" href="MVCSeq.uml#_RDiY4JL7Ed60q4NiehNL0Q"/>
