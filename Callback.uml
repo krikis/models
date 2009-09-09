@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Callback="http:///schemas/Callback/_tVQZEJ0iEd64G5FJwv2QXQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Callback/_tVQZEJ0iEd64G5FJwv2QXQ/0 CallbackProfile.uml#_tVTcYZ0iEd64G5FJwv2QXQ">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Callback="http:///schemas/Callback/_NbQ_UJ07Ed6L7d-XhJZ8hQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Callback/_NbQ_UJ07Ed6L7d-XhJZ8hQ/0 CallbackProfile.uml#_NbTbkZ07Ed6L7d-XhJZ8hQ">
   <uml:Package xmi:id="_A3kkgFaKEd67T6XSEZbabw" name="Callback">
     <elementImport xmi:id="_A4GwAFaKEd67T6XSEZbabw">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -22,24 +22,28 @@
         <end xmi:id="_13yAsFaKEd67T6XSEZbabw" role="_z-oGsFaKEd67T6XSEZbabw" partWithPort="_zB4xoFaKEd67T6XSEZbabw"/>
       </ownedConnector>
     </packagedElement>
-    <packagedElement xmi:type="uml:Component" xmi:id="_GsPR0FaKEd67T6XSEZbabw" name="Callback">
+    <packagedElement xmi:type="uml:Component" xmi:id="_GsPR0FaKEd67T6XSEZbabw" name="Callee">
       <ownedAttribute xmi:type="uml:Port" xmi:id="_zB4xoFaKEd67T6XSEZbabw" type="_J5DMEFaKEd67T6XSEZbabw" aggregation="composite"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_JANfkFaKEd67T6XSEZbabw" name="Update"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_JANfkFaKEd67T6XSEZbabw" name="Subscription"/>
     <packagedElement xmi:type="uml:Interface" xmi:id="_ISgFAFaKEd67T6XSEZbabw" name="Event"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_JlldgFaKEd67T6XSEZbabw" name="CallerPort" clientDependency="_W-EhkFaKEd67T6XSEZbabw _L4sIkFaKEd67T6XSEZbabw">
       <interfaceRealization xmi:id="_W-EhkFaKEd67T6XSEZbabw" supplier="_ISgFAFaKEd67T6XSEZbabw" client="_JlldgFaKEd67T6XSEZbabw" contract="_ISgFAFaKEd67T6XSEZbabw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_J5DMEFaKEd67T6XSEZbabw" name="CallbackPort" clientDependency="_Xkr1oFaKEd67T6XSEZbabw _MM-9kFaKEd67T6XSEZbabw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_J5DMEFaKEd67T6XSEZbabw" name="CalleePort" clientDependency="_Xkr1oFaKEd67T6XSEZbabw _MM-9kFaKEd67T6XSEZbabw">
       <interfaceRealization xmi:id="_Xkr1oFaKEd67T6XSEZbabw" name="" supplier="_JANfkFaKEd67T6XSEZbabw" client="_J5DMEFaKEd67T6XSEZbabw" contract="_JANfkFaKEd67T6XSEZbabw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Usage" xmi:id="_L4sIkFaKEd67T6XSEZbabw" supplier="_JANfkFaKEd67T6XSEZbabw" client="_JlldgFaKEd67T6XSEZbabw"/>
     <packagedElement xmi:type="uml:Usage" xmi:id="_MM-9kFaKEd67T6XSEZbabw" supplier="_ISgFAFaKEd67T6XSEZbabw" client="_J5DMEFaKEd67T6XSEZbabw"/>
-    <profileApplication xmi:id="_vy100J0tEd66lMOKOAuFxw">
-      <eAnnotations xmi:id="_vy4REJ0tEd66lMOKOAuFxw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="CallbackProfile.uml#_pxkO4J0tEd66lMOKOAuFxw"/>
+    <profileApplication xmi:id="_S5oFcJ07Ed6L7d-XhJZ8hQ">
+      <eAnnotations xmi:id="_S5qhsJ07Ed6L7d-XhJZ8hQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="CallbackProfile.uml#_NbTbkZ07Ed6L7d-XhJZ8hQ"/>
       </eAnnotations>
       <appliedProfile href="CallbackProfile.uml#_SrbmQRoGEd6fJO4W4FZ3Ow"/>
     </profileApplication>
   </uml:Package>
+  <Callback:Caller xmi:id="_UcdKIJ07Ed6L7d-XhJZ8hQ" base_Component="_GdGCkFaKEd67T6XSEZbabw"/>
+  <Callback:Callee xmi:id="_VUQU0J07Ed6L7d-XhJZ8hQ" base_Component="_GsPR0FaKEd67T6XSEZbabw"/>
+  <Callback:SubscriptionInterface xmi:id="_WPMTEJ07Ed6L7d-XhJZ8hQ" base_Interface="_JANfkFaKEd67T6XSEZbabw"/>
+  <Callback:EventInterface xmi:id="_XRsR4J07Ed6L7d-XhJZ8hQ" base_Interface="_ISgFAFaKEd67T6XSEZbabw"/>
 </xmi:XMI>

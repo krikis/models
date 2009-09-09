@@ -1,54 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_SrbmQRoGEd6fJO4W4FZ3Ow" name="Callback" metaclassReference="_XKBF8J0iEd64G5FJwv2QXQ _XKBF8Z0iEd64G5FJwv2QXQ">
-  <eAnnotations xmi:id="_tVTcYJ0iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-    <contents xmi:type="ecore:EPackage" xmi:id="_pxkO4J0tEd66lMOKOAuFxw" name="Callback" nsURI="http:///schemas/Callback/_pxhLkJ0tEd66lMOKOAuFxw/1" nsPrefix="Callback">
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pxkO4Z0tEd66lMOKOAuFxw" name="Caller">
-        <eAnnotations xmi:id="_pxkO4p0tEd66lMOKOAuFxw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X0xTIJ0iEd64G5FJwv2QXQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_pxkO450tEd66lMOKOAuFxw" name="base_Component" ordered="false" lowerBound="1">
+  <eAnnotations xmi:id="_NbTbkJ07Ed6L7d-XhJZ8hQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_NbTbkZ07Ed6L7d-XhJZ8hQ" name="Callback" nsURI="http:///schemas/Callback/_NbQ_UJ07Ed6L7d-XhJZ8hQ/0" nsPrefix="Callback">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NbTbkp07Ed6L7d-XhJZ8hQ" name="Caller">
+        <eAnnotations xmi:id="_NbTbk507Ed6L7d-XhJZ8hQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X0xTIJ0iEd64G5FJwv2QXQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NbTblJ07Ed6L7d-XhJZ8hQ" name="base_Component" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Component"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pxkO5Z0tEd66lMOKOAuFxw" name="Callback">
-        <eAnnotations xmi:id="_pxkO5p0tEd66lMOKOAuFxw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ZgUO8J0iEd64G5FJwv2QXQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_pxkO550tEd66lMOKOAuFxw" name="base_Component" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NbTblp07Ed6L7d-XhJZ8hQ" name="Callee">
+        <eAnnotations xmi:id="_NbTbl507Ed6L7d-XhJZ8hQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ZgUO8J0iEd64G5FJwv2QXQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NbTbmJ07Ed6L7d-XhJZ8hQ" name="base_Component" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Component"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pxkO6Z0tEd66lMOKOAuFxw" name="UpdateInterface">
-        <eAnnotations xmi:id="_pxkO6p0tEd66lMOKOAuFxw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gT5bkJ0iEd64G5FJwv2QXQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_pxkO650tEd66lMOKOAuFxw" name="base_Interface" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NbTbmp07Ed6L7d-XhJZ8hQ" name="SubscriptionInterface">
+        <eAnnotations xmi:id="_NbTbm507Ed6L7d-XhJZ8hQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gT5bkJ0iEd64G5FJwv2QXQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NbTbnJ07Ed6L7d-XhJZ8hQ" name="base_Interface" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_pxkO7Z0tEd66lMOKOAuFxw" name="EventInterface">
-        <eAnnotations xmi:id="_pxkO7p0tEd66lMOKOAuFxw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gj-e8J0iEd64G5FJwv2QXQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_pxkO750tEd66lMOKOAuFxw" name="base_Interface" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-    </contents>
-    <contents xmi:type="ecore:EPackage" xmi:id="_tVTcYZ0iEd64G5FJwv2QXQ" name="Callback" nsURI="http:///schemas/Callback/_tVQZEJ0iEd64G5FJwv2QXQ/0" nsPrefix="Callback">
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tVTcYp0iEd64G5FJwv2QXQ" name="Caller">
-        <eAnnotations xmi:id="_tVTcY50iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X0xTIJ0iEd64G5FJwv2QXQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tVTcZJ0iEd64G5FJwv2QXQ" name="base_Component" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Component"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tVTcZp0iEd64G5FJwv2QXQ" name="Callback">
-        <eAnnotations xmi:id="_tVTcZ50iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ZgUO8J0iEd64G5FJwv2QXQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tVTcaJ0iEd64G5FJwv2QXQ" name="base_Component" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Component"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tVTcap0iEd64G5FJwv2QXQ" name="UpdateInterface">
-        <eAnnotations xmi:id="_tVTca50iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gT5bkJ0iEd64G5FJwv2QXQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tVTcbJ0iEd64G5FJwv2QXQ" name="base_Interface" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tVTcbp0iEd64G5FJwv2QXQ" name="EventInterface">
-        <eAnnotations xmi:id="_tVTcb50iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gj-e8J0iEd64G5FJwv2QXQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tVTccJ0iEd64G5FJwv2QXQ" name="base_Interface" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NbTbnp07Ed6L7d-XhJZ8hQ" name="EventInterface">
+        <eAnnotations xmi:id="_NbTbn507Ed6L7d-XhJZ8hQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gj-e8J0iEd64G5FJwv2QXQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NbTboJ07Ed6L7d-XhJZ8hQ" name="base_Interface" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
         </eStructuralFeatures>
       </eClassifiers>
@@ -65,7 +39,7 @@
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZgUO8J0iEd64G5FJwv2QXQ" name="Callback">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZgUO8J0iEd64G5FJwv2QXQ" name="Callee">
     <ownedAttribute xmi:id="_fPexMJ0iEd64G5FJwv2QXQ" name="base_Component" association="_fPeKIJ0iEd64G5FJwv2QXQ">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
     </ownedAttribute>
@@ -73,10 +47,10 @@
   <packagedElement xmi:type="uml:Extension" xmi:id="_eR3SYJ0iEd64G5FJwv2QXQ" name="Component_Caller" memberEnd="_eR3SYZ0iEd64G5FJwv2QXQ _eR35cJ0iEd64G5FJwv2QXQ">
     <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_eR3SYZ0iEd64G5FJwv2QXQ" name="extension_Caller" type="_X0xTIJ0iEd64G5FJwv2QXQ" aggregation="composite" association="_eR3SYJ0iEd64G5FJwv2QXQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_fPeKIJ0iEd64G5FJwv2QXQ" name="Component_Callback" memberEnd="_fPeKIZ0iEd64G5FJwv2QXQ _fPexMJ0iEd64G5FJwv2QXQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fPeKIZ0iEd64G5FJwv2QXQ" name="extension_Callback" type="_ZgUO8J0iEd64G5FJwv2QXQ" aggregation="composite" association="_fPeKIJ0iEd64G5FJwv2QXQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_fPeKIJ0iEd64G5FJwv2QXQ" name="Component_Callee" memberEnd="_fPeKIZ0iEd64G5FJwv2QXQ _fPexMJ0iEd64G5FJwv2QXQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fPeKIZ0iEd64G5FJwv2QXQ" name="extension_Callee" type="_ZgUO8J0iEd64G5FJwv2QXQ" aggregation="composite" association="_fPeKIJ0iEd64G5FJwv2QXQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_gT5bkJ0iEd64G5FJwv2QXQ" name="UpdateInterface">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_gT5bkJ0iEd64G5FJwv2QXQ" name="SubscriptionInterface">
     <ownedAttribute xmi:id="_lamPoZ0iEd64G5FJwv2QXQ" name="base_Interface" association="_lalokJ0iEd64G5FJwv2QXQ">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
     </ownedAttribute>
@@ -86,8 +60,8 @@
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_lalokJ0iEd64G5FJwv2QXQ" name="Interface_UpdateInterface" memberEnd="_lamPoJ0iEd64G5FJwv2QXQ _lamPoZ0iEd64G5FJwv2QXQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_lamPoJ0iEd64G5FJwv2QXQ" name="extension_UpdateInterface" type="_gT5bkJ0iEd64G5FJwv2QXQ" aggregation="composite" association="_lalokJ0iEd64G5FJwv2QXQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_lalokJ0iEd64G5FJwv2QXQ" name="Interface_SubscriptionInterface" memberEnd="_lamPoJ0iEd64G5FJwv2QXQ _lamPoZ0iEd64G5FJwv2QXQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_lamPoJ0iEd64G5FJwv2QXQ" name="extension_SubscriptionInterface" type="_gT5bkJ0iEd64G5FJwv2QXQ" aggregation="composite" association="_lalokJ0iEd64G5FJwv2QXQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Extension" xmi:id="_mZhWAJ0iEd64G5FJwv2QXQ" name="Interface_EventInterface" memberEnd="_mZhWAZ0iEd64G5FJwv2QXQ _mZhWAp0iEd64G5FJwv2QXQ">
     <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_mZhWAZ0iEd64G5FJwv2QXQ" name="extension_EventInterface" type="_gj-e8J0iEd64G5FJwv2QXQ" aggregation="composite" association="_mZhWAJ0iEd64G5FJwv2QXQ"/>
