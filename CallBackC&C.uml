@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Callback="http:///schemas/Callback/_D-WHMFaVEd67T6XSEZbabw/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Callback/_D-WHMFaVEd67T6XSEZbabw/1 platform:/resource/Test/models/CallBackProfile.uml#_D-WHMVaVEd67T6XSEZbabw">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Callback="http:///schemas/Callback/_D-WHMFaVEd67T6XSEZbabw/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Callback/_D-WHMFaVEd67T6XSEZbabw/1 CallBackProfile.uml#_D-WHMVaVEd67T6XSEZbabw">
   <uml:Package xmi:id="_A3kkgFaKEd67T6XSEZbabw" name="CallBack">
     <elementImport xmi:id="_A4GwAFaKEd67T6XSEZbabw">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -18,8 +18,8 @@
       <ownedAttribute xmi:id="_zwYPUFaKEd67T6XSEZbabw" type="_GdGCkFaKEd67T6XSEZbabw"/>
       <ownedAttribute xmi:id="_z-oGsFaKEd67T6XSEZbabw" type="_GsPR0FaKEd67T6XSEZbabw"/>
       <ownedConnector xmi:id="_0joRMFaKEd67T6XSEZbabw">
-        <end xmi:id="_1spHsFaKEd67T6XSEZbabw" partWithPort="_yZAMsFaKEd67T6XSEZbabw" role="_zwYPUFaKEd67T6XSEZbabw"/>
-        <end xmi:id="_13yAsFaKEd67T6XSEZbabw" partWithPort="_zB4xoFaKEd67T6XSEZbabw" role="_z-oGsFaKEd67T6XSEZbabw"/>
+        <end xmi:id="_1spHsFaKEd67T6XSEZbabw" role="_zwYPUFaKEd67T6XSEZbabw" partWithPort="_yZAMsFaKEd67T6XSEZbabw"/>
+        <end xmi:id="_13yAsFaKEd67T6XSEZbabw" role="_z-oGsFaKEd67T6XSEZbabw" partWithPort="_zB4xoFaKEd67T6XSEZbabw"/>
       </ownedConnector>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_GsPR0FaKEd67T6XSEZbabw" name="CallBack">
@@ -37,9 +37,9 @@
     <packagedElement xmi:type="uml:Usage" xmi:id="_MM-9kFaKEd67T6XSEZbabw" supplier="_ISgFAFaKEd67T6XSEZbabw" client="_J5DMEFaKEd67T6XSEZbabw"/>
     <profileApplication xmi:id="_G1X-sFaVEd67T6XSEZbabw">
       <eAnnotations xmi:id="_G1X-sVaVEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="platform:/resource/Test/models/CallBackProfile.uml#_D-WHMVaVEd67T6XSEZbabw"/>
+        <references xmi:type="ecore:EPackage" href="CallBackProfile.uml#_D-WHMVaVEd67T6XSEZbabw"/>
       </eAnnotations>
-      <appliedProfile href="platform:/resource/Test/models/CallBackProfile.uml#_SrbmQRoGEd6fJO4W4FZ3Ow"/>
+      <appliedProfile href="CallBackProfile.uml#_SrbmQRoGEd6fJO4W4FZ3Ow"/>
     </profileApplication>
   </uml:Package>
   <Callback:EventPort xmi:id="_IlYjwFaVEd67T6XSEZbabw" base_Port="_yZAMsFaKEd67T6XSEZbabw"/>
