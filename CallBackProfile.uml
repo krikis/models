@@ -1,216 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_SrbmQRoGEd6fJO4W4FZ3Ow" name="Callback" metaclassReference="_lsbyABoGEd6fJO4W4FZ3Ow _lscZEBoGEd6fJO4W4FZ3Ow _lscZERoGEd6fJO4W4FZ3Ow">
-  <eAnnotations xmi:id="_B-NlkBoHEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML">
-    <contents xmi:type="ecore:EPackage" xmi:id="_vR3e0FaZEd67T6XSEZbabw" name="Callback" nsURI="http:///schemas/Callback/_vR23wFaZEd67T6XSEZbabw/2" nsPrefix="Callback">
-      <eAnnotations xmi:id="_vR3e0VaZEd67T6XSEZbabw" source="http://www.eclipse.org/emf/2002/GenModel">
-        <details xmi:id="_vR3e0laZEd67T6XSEZbabw" key="documentation" value="Component.allInstances()->collect(ownedConnector).getAppliedStereotypes()->any(name = 'Callback')->notEmpty()&#xA;Component.allInstances()->collect(ownedConnector)->any(getAppliedStereotypes()->collect(name)->includes('Callback')).end->size()=2&#xA;Component.allInstances()->collect(ownedConnector).end.partWithPort.getAppliedStereotypes()->any(name = 'EventPort')->notEmpty()&#xA;Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='EventPort'))->collect(getProvideds()).getAppliedStereotypes()->any(name='IEvent')->notEmpty()&#xA;Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='EventPort'))->collect(getRequireds()).getAppliedStereotypes()->any(name='ICallback')->notEmpty()&#xA;Component.allInstances()->collect(ownedConnector).end.partWithPort.getAppliedStereotypes()->any(name = 'CallbackPort')->notEmpty()&#xA;Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='CallbackPort'))->collect(getProvideds()).getAppliedStereotypes()->any(name='ICallback')->notEmpty()&#xA;Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='CallbackPort'))->collect(getRequireds()).getAppliedStereotypes()->any(name='IEvent')->notEmpty()&#xA;Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='EventPort'))->collect(getProvideds())= Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='CallbackPort'))->collect(getRequireds())&#xA;Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='CallbackPort'))->collect(getProvideds())= Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='EventPort'))->collect(getRequireds())"/>
-      </eAnnotations>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vR3e01aZEd67T6XSEZbabw" name="IEvent">
-        <eAnnotations xmi:id="_vR3e1FaZEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_nATNoBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vR3e1VaZEd67T6XSEZbabw" name="base_Interface" ordered="false" lowerBound="1">
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_SrbmQRoGEd6fJO4W4FZ3Ow" name="Callback" metaclassReference="_XKBF8J0iEd64G5FJwv2QXQ _XKBF8Z0iEd64G5FJwv2QXQ">
+  <eAnnotations xmi:id="_tVTcYJ0iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_tVTcYZ0iEd64G5FJwv2QXQ" name="Callback" nsURI="http:///schemas/Callback/_tVQZEJ0iEd64G5FJwv2QXQ/0" nsPrefix="Callback">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tVTcYp0iEd64G5FJwv2QXQ" name="Caller">
+        <eAnnotations xmi:id="_tVTcY50iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X0xTIJ0iEd64G5FJwv2QXQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tVTcZJ0iEd64G5FJwv2QXQ" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tVTcZp0iEd64G5FJwv2QXQ" name="CallBack">
+        <eAnnotations xmi:id="_tVTcZ50iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ZgUO8J0iEd64G5FJwv2QXQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tVTcaJ0iEd64G5FJwv2QXQ" name="base_Component" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tVTcap0iEd64G5FJwv2QXQ" name="UpdateInterface">
+        <eAnnotations xmi:id="_tVTca50iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gT5bkJ0iEd64G5FJwv2QXQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tVTcbJ0iEd64G5FJwv2QXQ" name="base_Interface" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vR3e11aZEd67T6XSEZbabw" name="ICallback">
-        <eAnnotations xmi:id="_vR3e2FaZEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n6YQQBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vR3e2VaZEd67T6XSEZbabw" name="base_Interface" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tVTcbp0iEd64G5FJwv2QXQ" name="EventInterface">
+        <eAnnotations xmi:id="_tVTcb50iEd64G5FJwv2QXQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_gj-e8J0iEd64G5FJwv2QXQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tVTccJ0iEd64G5FJwv2QXQ" name="base_Interface" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vR3e21aZEd67T6XSEZbabw" name="EventPort">
-        <eAnnotations xmi:id="_vR3e3FaZEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oSJ3EBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vR3e3VaZEd67T6XSEZbabw" name="base_Port" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vR3e31aZEd67T6XSEZbabw" name="CallbackPort">
-        <eAnnotations xmi:id="_vR3e4FaZEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oelJgBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vR3e4VaZEd67T6XSEZbabw" name="base_Port" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_vR3e41aZEd67T6XSEZbabw" name="Callback">
-        <eAnnotations xmi:id="_vR3e5FaZEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_os7HgBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_vR3e5VaZEd67T6XSEZbabw" name="base_Connector" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Connector"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-    </contents>
-    <contents xmi:type="ecore:EPackage" xmi:id="_D-WHMVaVEd67T6XSEZbabw" name="Callback" nsURI="http:///schemas/Callback/_D-WHMFaVEd67T6XSEZbabw/1" nsPrefix="Callback">
-      <eAnnotations xmi:id="_D-WHMlaVEd67T6XSEZbabw" source="http://www.eclipse.org/emf/2002/GenModel">
-        <details xmi:id="_D-WHM1aVEd67T6XSEZbabw" key="documentation" value="Component.allInstances()->collect(ownedConnector) .getAppliedStereotypes()->any(name = 'Callback')->notEmpty()&#xA;&#xA;Component.allInstances()->collect(ownedConnector) ->any(getAppliedStereotypes()->collect(name) ->includes('Callback')).end->size()=2&#xA;&#xA;Component.allInstances()->collect(ownedConnector).end.partWithPort .getAppliedStereotypes()->any(name = 'EventPort')->notEmpty()&#xA;&#xA;Component.allInstances()->collect(ownedPort) ->select(getAppliedStereotypes()->exists(name='EventPort')) ->collect(getProvideds()).getAppliedStereotypes() ->any(name='IEvent')->notEmpty()&#xA;&#xA;Component.allInstances()->collect(ownedPort) ->select(getAppliedStereotypes()->exists(name='EventPort')) ->collect(getRequireds()).getAppliedStereotypes() ->any(name='ICallback')->notEmpty()&#xA;&#xA;Component.allInstances()->collect(ownedConnector).end.partWithPort .getAppliedStereotypes()->any(name = 'CallbackPort')->notEmpty()&#xA;&#xA;Component.allInstances()->collect(ownedPort) ->select(getAppliedStereotypes()->exists(name='CallbackPort')) ->collect(getProvideds()).getAppliedStereotypes() ->any(name='ICallback')->notEmpty()&#xA;&#xA;Component.allInstances()->collect(ownedPort) ->select(getAppliedStereotypes()->exists(name='CallbackPort')) ->collect(getRequireds()).getAppliedStereotypes() ->any(name='IEvent')->notEmpty()&#xA;&#xA;Component.allInstances()->collect(ownedPort) ->select(getAppliedStereotypes()->exists(name='EventPort')) ->collect(getProvideds())= Component.allInstances() ->collect(ownedPort)->select(getAppliedStereotypes() ->exists(name='CallbackPort'))->collect(getRequireds())&#xA;&#xA;Component.allInstances()->collect(ownedPort) ->select(getAppliedStereotypes()->exists(name='CallbackPort')) ->collect(getProvideds())= Component.allInstances() ->collect(ownedPort)->select(getAppliedStereotypes() ->exists(name='EventPort'))->collect(getRequireds())"/>
-      </eAnnotations>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_D-WHNFaVEd67T6XSEZbabw" name="IEvent">
-        <eAnnotations xmi:id="_D-WHNVaVEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_nATNoBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_D-WHNlaVEd67T6XSEZbabw" name="base_Interface" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_D-WHOFaVEd67T6XSEZbabw" name="ICallback">
-        <eAnnotations xmi:id="_D-WHOVaVEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n6YQQBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_D-WHOlaVEd67T6XSEZbabw" name="base_Interface" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_D-WHPFaVEd67T6XSEZbabw" name="EventPort">
-        <eAnnotations xmi:id="_D-WHPVaVEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oSJ3EBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_D-WHPlaVEd67T6XSEZbabw" name="base_Port" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_D-WHQFaVEd67T6XSEZbabw" name="CallbackPort">
-        <eAnnotations xmi:id="_D-WHQVaVEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oelJgBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_D-WHQlaVEd67T6XSEZbabw" name="base_Port" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_D-WHRFaVEd67T6XSEZbabw" name="Callback">
-        <eAnnotations xmi:id="_D-WHRVaVEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_os7HgBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_D-WHRlaVEd67T6XSEZbabw" name="base_Connector" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Connector"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-    </contents>
-    <contents xmi:type="ecore:EPackage" xmi:id="_B-NlkRoHEd6fJO4W4FZ3Ow" name="Callback" nsURI="http:///schemas/Callback/_B-LwYBoHEd6fJO4W4FZ3Ow/0" nsPrefix="Callback">
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_B-NlkhoHEd6fJO4W4FZ3Ow" name="IEvent">
-        <eAnnotations xmi:id="_B-NlkxoHEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_nATNoBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_B-NllBoHEd6fJO4W4FZ3Ow" name="base_Interface" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_B-NllhoHEd6fJO4W4FZ3Ow" name="ICallback">
-        <eAnnotations xmi:id="_B-NllxoHEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n6YQQBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_B-NlmBoHEd6fJO4W4FZ3Ow" name="base_Interface" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Interface"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_B-NlmhoHEd6fJO4W4FZ3Ow" name="EventPort">
-        <eAnnotations xmi:id="_B-NlmxoHEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oSJ3EBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_B-NlnBoHEd6fJO4W4FZ3Ow" name="base_Port" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_B-NlnhoHEd6fJO4W4FZ3Ow" name="CallbackPort">
-        <eAnnotations xmi:id="_B-NlnxoHEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oelJgBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_B-NloBoHEd6fJO4W4FZ3Ow" name="base_Port" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Port"/>
-        </eStructuralFeatures>
-      </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_B-NlohoHEd6fJO4W4FZ3Ow" name="Callback">
-        <eAnnotations xmi:id="_B-NloxoHEd6fJO4W4FZ3Ow" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_os7HgBoGEd6fJO4W4FZ3Ow"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_B-NlpBoHEd6fJO4W4FZ3Ow" name="base_Connector" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Connector"/>
         </eStructuralFeatures>
       </eClassifiers>
     </contents>
   </eAnnotations>
-  <elementImport xmi:id="_lsbyABoGEd6fJO4W4FZ3Ow">
-    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Connector"/>
+  <elementImport xmi:id="_XKBF8J0iEd64G5FJwv2QXQ">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
   </elementImport>
-  <elementImport xmi:id="_lscZEBoGEd6fJO4W4FZ3Ow">
+  <elementImport xmi:id="_XKBF8Z0iEd64G5FJwv2QXQ">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
   </elementImport>
-  <elementImport xmi:id="_lscZERoGEd6fJO4W4FZ3Ow">
-    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
-  </elementImport>
-  <ownedRule xmi:id="_VvqGUFaNEd67T6XSEZbabw" name="CallbackConnector">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_W9ZEwFaNEd67T6XSEZbabw" name="">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedConnector).getAppliedStereotypes()->any(name = 'Callback')->notEmpty()</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_pf9ZUFaTEd67T6XSEZbabw" name="ConnectorEnds">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_tKLBQFaTEd67T6XSEZbabw">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedConnector)->any(getAppliedStereotypes()->collect(name)->includes('Callback')).end->size()=2</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_pudIUFaTEd67T6XSEZbabw" name="EventPort">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_uT5CYFaTEd67T6XSEZbabw" name="">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedConnector).end.partWithPort.getAppliedStereotypes()->any(name = 'EventPort')->notEmpty()</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_qKEtUFaTEd67T6XSEZbabw" name="IEventRealization">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_u87YUFaTEd67T6XSEZbabw">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='EventPort'))->collect(getProvideds()).getAppliedStereotypes()->any(name='IEvent')->notEmpty()</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_qKEtUVaTEd67T6XSEZbabw" name="ICallBackUse">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_vl5c0FaTEd67T6XSEZbabw">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='EventPort'))->collect(getRequireds()).getAppliedStereotypes()->any(name='ICallback')->notEmpty()</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_qlAV0FaTEd67T6XSEZbabw" name="CallbackPort">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_wN4C0FaTEd67T6XSEZbabw">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedConnector).end.partWithPort.getAppliedStereotypes()->any(name = 'CallbackPort')->notEmpty()</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_qlAV0VaTEd67T6XSEZbabw" name="ICallbackRelization">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_xyID0FaTEd67T6XSEZbabw">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='CallbackPort'))->collect(getProvideds()).getAppliedStereotypes()->any(name='ICallback')->notEmpty()</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_qlAV0laTEd67T6XSEZbabw" name="IEventUse">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_yqgdUFaTEd67T6XSEZbabw">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='CallbackPort'))->collect(getRequireds()).getAppliedStereotypes()->any(name='IEvent')->notEmpty()</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_qlAV01aTEd67T6XSEZbabw" name="IEvent">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_ziqNUFaTEd67T6XSEZbabw">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='EventPort'))->collect(getProvideds())= Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='CallbackPort'))->collect(getRequireds())</body>
-    </specification>
-  </ownedRule>
-  <ownedRule xmi:id="_r8JH4FaTEd67T6XSEZbabw" name="ICallback">
-    <specification xmi:type="uml:OpaqueExpression" xmi:id="_0Lz4AFaTEd67T6XSEZbabw" name="">
-      <language>OCL</language>
-      <body>Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='CallbackPort'))->collect(getProvideds())= Component.allInstances()->collect(ownedPort)->select(getAppliedStereotypes()->exists(name='EventPort'))->collect(getRequireds())</body>
-    </specification>
-  </ownedRule>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_nATNoBoGEd6fJO4W4FZ3Ow" name="IEvent">
-    <ownedAttribute xmi:id="_5e7FEhoGEd6fJO4W4FZ3Ow" name="base_Interface" association="_5e7FEBoGEd6fJO4W4FZ3Ow">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_X0xTIJ0iEd64G5FJwv2QXQ" name="Caller">
+    <ownedAttribute xmi:id="_eR35cJ0iEd64G5FJwv2QXQ" name="base_Component" association="_eR3SYJ0iEd64G5FJwv2QXQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ZgUO8J0iEd64G5FJwv2QXQ" name="CallBack">
+    <ownedAttribute xmi:id="_fPexMJ0iEd64G5FJwv2QXQ" name="base_Component" association="_fPeKIJ0iEd64G5FJwv2QXQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_eR3SYJ0iEd64G5FJwv2QXQ" name="Component_Caller" memberEnd="_eR3SYZ0iEd64G5FJwv2QXQ _eR35cJ0iEd64G5FJwv2QXQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_eR3SYZ0iEd64G5FJwv2QXQ" name="extension_Caller" type="_X0xTIJ0iEd64G5FJwv2QXQ" aggregation="composite" association="_eR3SYJ0iEd64G5FJwv2QXQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_fPeKIJ0iEd64G5FJwv2QXQ" name="Component_CallBack" memberEnd="_fPeKIZ0iEd64G5FJwv2QXQ _fPexMJ0iEd64G5FJwv2QXQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_fPeKIZ0iEd64G5FJwv2QXQ" name="extension_CallBack" type="_ZgUO8J0iEd64G5FJwv2QXQ" aggregation="composite" association="_fPeKIJ0iEd64G5FJwv2QXQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_gT5bkJ0iEd64G5FJwv2QXQ" name="UpdateInterface">
+    <ownedAttribute xmi:id="_lamPoZ0iEd64G5FJwv2QXQ" name="base_Interface" association="_lalokJ0iEd64G5FJwv2QXQ">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_n6YQQBoGEd6fJO4W4FZ3Ow" name="ICallback">
-    <ownedAttribute xmi:id="_7w8yEhoGEd6fJO4W4FZ3Ow" name="base_Interface" association="_7w8yEBoGEd6fJO4W4FZ3Ow">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_gj-e8J0iEd64G5FJwv2QXQ" name="EventInterface">
+    <ownedAttribute xmi:id="_mZhWAp0iEd64G5FJwv2QXQ" name="base_Interface" association="_mZhWAJ0iEd64G5FJwv2QXQ">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interface"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_oSJ3EBoGEd6fJO4W4FZ3Ow" name="EventPort">
-    <ownedAttribute xmi:id="_98dnYRoGEd6fJO4W4FZ3Ow" name="base_Port" association="_98dAUBoGEd6fJO4W4FZ3Ow">
-      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
-    </ownedAttribute>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_lalokJ0iEd64G5FJwv2QXQ" name="Interface_UpdateInterface" memberEnd="_lamPoJ0iEd64G5FJwv2QXQ _lamPoZ0iEd64G5FJwv2QXQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_lamPoJ0iEd64G5FJwv2QXQ" name="extension_UpdateInterface" type="_gT5bkJ0iEd64G5FJwv2QXQ" aggregation="composite" association="_lalokJ0iEd64G5FJwv2QXQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_oelJgBoGEd6fJO4W4FZ3Ow" name="CallbackPort">
-    <ownedAttribute xmi:id="__X5qohoGEd6fJO4W4FZ3Ow" name="base_Port" association="__X5qoBoGEd6fJO4W4FZ3Ow">
-      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Port"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_os7HgBoGEd6fJO4W4FZ3Ow" name="Callback">
-    <ownedAttribute xmi:id="_AcU8EhoHEd6fJO4W4FZ3Ow" name="base_Connector" association="_AcU8EBoHEd6fJO4W4FZ3Ow">
-      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Connector"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_5e7FEBoGEd6fJO4W4FZ3Ow" name="Interface_IEvent" memberEnd="_5e7FERoGEd6fJO4W4FZ3Ow _5e7FEhoGEd6fJO4W4FZ3Ow">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_5e7FERoGEd6fJO4W4FZ3Ow" name="extension_IEvent" type="_nATNoBoGEd6fJO4W4FZ3Ow" aggregation="composite" association="_5e7FEBoGEd6fJO4W4FZ3Ow"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_7w8yEBoGEd6fJO4W4FZ3Ow" name="Interface_ICallback" memberEnd="_7w8yERoGEd6fJO4W4FZ3Ow _7w8yEhoGEd6fJO4W4FZ3Ow">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_7w8yERoGEd6fJO4W4FZ3Ow" name="extension_ICallback" type="_n6YQQBoGEd6fJO4W4FZ3Ow" aggregation="composite" association="_7w8yEBoGEd6fJO4W4FZ3Ow"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_98dAUBoGEd6fJO4W4FZ3Ow" name="Port_EventPort" memberEnd="_98dnYBoGEd6fJO4W4FZ3Ow _98dnYRoGEd6fJO4W4FZ3Ow">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_98dnYBoGEd6fJO4W4FZ3Ow" name="extension_EventPort" type="_oSJ3EBoGEd6fJO4W4FZ3Ow" aggregation="composite" association="_98dAUBoGEd6fJO4W4FZ3Ow"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="__X5qoBoGEd6fJO4W4FZ3Ow" name="Port_CallbackPort" memberEnd="__X5qoRoGEd6fJO4W4FZ3Ow __X5qohoGEd6fJO4W4FZ3Ow">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="__X5qoRoGEd6fJO4W4FZ3Ow" name="extension_CallbackPort" type="_oelJgBoGEd6fJO4W4FZ3Ow" aggregation="composite" association="__X5qoBoGEd6fJO4W4FZ3Ow"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_AcU8EBoHEd6fJO4W4FZ3Ow" name="Connector_Callback" memberEnd="_AcU8ERoHEd6fJO4W4FZ3Ow _AcU8EhoHEd6fJO4W4FZ3Ow">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_AcU8ERoHEd6fJO4W4FZ3Ow" name="extension_Callback" type="_os7HgBoGEd6fJO4W4FZ3Ow" aggregation="composite" association="_AcU8EBoHEd6fJO4W4FZ3Ow"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_mZhWAJ0iEd64G5FJwv2QXQ" name="Interface_EventInterface" memberEnd="_mZhWAZ0iEd64G5FJwv2QXQ _mZhWAp0iEd64G5FJwv2QXQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_mZhWAZ0iEd64G5FJwv2QXQ" name="extension_EventInterface" type="_gj-e8J0iEd64G5FJwv2QXQ" aggregation="composite" association="_mZhWAJ0iEd64G5FJwv2QXQ"/>
   </packagedElement>
 </uml:Profile>
