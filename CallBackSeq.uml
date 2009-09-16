@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CallbackSeq="http:///schemas/CallbackSeq/_vvY7kFaJEd67T6XSEZbabw/6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/CallbackSeq/_vvY7kFaJEd67T6XSEZbabw/6 platform:/resource/Test/models/CallbackSeqProfile.uml#_vvY7kVaJEd67T6XSEZbabw">
-  <uml:Package xmi:id="_WRONMFaLEd67T6XSEZbabw" name="CallBack">
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_eYku0FaLEd67T6XSEZbabw" name="CallBackSequence">
-      <generalOrdering xmi:id="_rGB44FaLEd67T6XSEZbabw" name="CallerOccurrences" before="_oUflYFaLEd67T6XSEZbabw" after="_pc1GcVaLEd67T6XSEZbabw"/>
-      <generalOrdering xmi:id="_soOrcFaLEd67T6XSEZbabw" name="CallBackOccurrences" before="_onk5cFaLEd67T6XSEZbabw" after="_pc1GcFaLEd67T6XSEZbabw"/>
-      <lifeline xmi:id="_lg0j4FaLEd67T6XSEZbabw" name="CallerPLifeline" coveredBy="_pc1GcVaLEd67T6XSEZbabw _oUflYFaLEd67T6XSEZbabw"/>
-      <lifeline xmi:id="_mbzlcFaLEd67T6XSEZbabw" name="CallBackPLifeline" coveredBy="_pc1GcFaLEd67T6XSEZbabw _onk5cFaLEd67T6XSEZbabw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oUflYFaLEd67T6XSEZbabw" name="SendUpdate" covered="_lg0j4FaLEd67T6XSEZbabw" event="_i-UK4FaLEd67T6XSEZbabw" toAfter="_rGB44FaLEd67T6XSEZbabw" message="_m5F-YFaLEd67T6XSEZbabw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_onk5cFaLEd67T6XSEZbabw" name="RecieveUpdate" covered="_mbzlcFaLEd67T6XSEZbabw" event="_i-UK4FaLEd67T6XSEZbabw" toAfter="_soOrcFaLEd67T6XSEZbabw" message="_m5F-YFaLEd67T6XSEZbabw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pc1GcFaLEd67T6XSEZbabw" name="SendObserveEvent" covered="_mbzlcFaLEd67T6XSEZbabw" toBefore="_soOrcFaLEd67T6XSEZbabw" event="_jNf2YFaLEd67T6XSEZbabw" message="_nHmUcFaLEd67T6XSEZbabw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pc1GcVaLEd67T6XSEZbabw" name="ReceiveObserveEvent" covered="_lg0j4FaLEd67T6XSEZbabw" toBefore="_rGB44FaLEd67T6XSEZbabw" event="_jNf2YFaLEd67T6XSEZbabw" message="_nHmUcFaLEd67T6XSEZbabw"/>
-      <message xmi:id="_m5F-YFaLEd67T6XSEZbabw" name="Update" receiveEvent="_onk5cFaLEd67T6XSEZbabw" sendEvent="_oUflYFaLEd67T6XSEZbabw"/>
-      <message xmi:id="_nHmUcFaLEd67T6XSEZbabw" name="ObserveEvent" receiveEvent="_pc1GcVaLEd67T6XSEZbabw" sendEvent="_pc1GcFaLEd67T6XSEZbabw"/>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Callback="http:///schemas/Callback/_RPnBYKIiEd6U04mZnfx5RA/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Callback/_RPnBYKIiEd6U04mZnfx5RA/0 CallbackSeqProfile.uml#_RPoPgaIiEd6U04mZnfx5RA">
+  <uml:Package xmi:id="_ZsKW8KIiEd6U04mZnfx5RA">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_ahn_UKIiEd6U04mZnfx5RA" name="Interaction">
+      <lifeline xmi:id="_ayyAwKIiEd6U04mZnfx5RA" name="Caller" coveredBy="_dQh1kaIiEd6U04mZnfx5RA _dQhOgKIiEd6U04mZnfx5RA _dQh1lKIiEd6U04mZnfx5RA _gkI7Y6IiEd6U04mZnfx5RA _gkI7YaIiEd6U04mZnfx5RA _gkI7ZKIiEd6U04mZnfx5RA"/>
+      <lifeline xmi:id="_brslwKIiEd6U04mZnfx5RA" name="Callee" coveredBy="_dQh1kqIiEd6U04mZnfx5RA _dQh1kKIiEd6U04mZnfx5RA _dQh1k6IiEd6U04mZnfx5RA _gkI7YqIiEd6U04mZnfx5RA _gkI7YKIiEd6U04mZnfx5RA _gkI7ZaIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQhOgKIiEd6U04mZnfx5RA" name="invocation-1-start" covered="_ayyAwKIiEd6U04mZnfx5RA" message="_dQicoKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQh1kKIiEd6U04mZnfx5RA" name="execution-1-start" covered="_brslwKIiEd6U04mZnfx5RA" message="_dQicoKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_dQh1kaIiEd6U04mZnfx5RA" name="invocation-1-body" covered="_ayyAwKIiEd6U04mZnfx5RA" start="_dQhOgKIiEd6U04mZnfx5RA" finish="_dQh1lKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_dQh1kqIiEd6U04mZnfx5RA" name="execution-1-body" covered="_brslwKIiEd6U04mZnfx5RA" start="_dQh1kKIiEd6U04mZnfx5RA" finish="_dQh1k6IiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQh1k6IiEd6U04mZnfx5RA" name="execution-1-finish" covered="_brslwKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQh1lKIiEd6U04mZnfx5RA" name="invocation-1-finish" covered="_ayyAwKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gkI7YKIiEd6U04mZnfx5RA" name="invocation-2-start" covered="_brslwKIiEd6U04mZnfx5RA" message="_gkJicKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gkI7YaIiEd6U04mZnfx5RA" name="execution-2-start" covered="_ayyAwKIiEd6U04mZnfx5RA" message="_gkJicKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_gkI7YqIiEd6U04mZnfx5RA" name="invocation-2-body" covered="_brslwKIiEd6U04mZnfx5RA" start="_gkI7YKIiEd6U04mZnfx5RA" finish="_gkI7ZaIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_gkI7Y6IiEd6U04mZnfx5RA" name="execution-2-body" covered="_ayyAwKIiEd6U04mZnfx5RA" start="_gkI7YaIiEd6U04mZnfx5RA" finish="_gkI7ZKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gkI7ZKIiEd6U04mZnfx5RA" name="execution-2-finish" covered="_ayyAwKIiEd6U04mZnfx5RA"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gkI7ZaIiEd6U04mZnfx5RA" name="invocation-2-finish" covered="_brslwKIiEd6U04mZnfx5RA"/>
+      <message xmi:id="_dQicoKIiEd6U04mZnfx5RA" name="subscribeToEvent" receiveEvent="_dQh1kKIiEd6U04mZnfx5RA" sendEvent="_dQhOgKIiEd6U04mZnfx5RA"/>
+      <message xmi:id="_gkJicKIiEd6U04mZnfx5RA" name="handleEvent" receiveEvent="_gkI7YaIiEd6U04mZnfx5RA" sendEvent="_gkI7YKIiEd6U04mZnfx5RA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_i-UK4FaLEd67T6XSEZbabw" name="Update"/>
-    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_jNf2YFaLEd67T6XSEZbabw" name="ObserveEvent"/>
-    <profileApplication xmi:id="_MOUucFaXEd67T6XSEZbabw">
-      <eAnnotations xmi:id="_MOUucVaXEd67T6XSEZbabw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="platform:/resource/Test/models/CallbackSeqProfile.uml#_vvY7kVaJEd67T6XSEZbabw"/>
+    <profileApplication xmi:id="_5hfuMKKNEd6U04mZnfx5RA">
+      <eAnnotations xmi:id="_5hhjYKKNEd6U04mZnfx5RA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="CallbackSeqProfile.uml#_RPoPgaIiEd6U04mZnfx5RA"/>
       </eAnnotations>
-      <appliedProfile href="platform:/resource/Test/models/CallbackSeqProfile.uml#_0fKqwC80Ed6Mz5zecd_Slw"/>
+      <appliedProfile href="CallbackSeqProfile.uml#_72UIkKIhEd6U04mZnfx5RA"/>
     </profileApplication>
   </uml:Package>
-  <CallbackSeq:CallerP xmi:id="_RoZKcFaXEd67T6XSEZbabw" base_Lifeline="_lg0j4FaLEd67T6XSEZbabw"/>
-  <CallbackSeq:CallBackP xmi:id="_Sm9EcFaXEd67T6XSEZbabw" base_Lifeline="_mbzlcFaLEd67T6XSEZbabw"/>
-  <CallbackSeq:Update xmi:id="_Tmyw0FaXEd67T6XSEZbabw" base_Message="_m5F-YFaLEd67T6XSEZbabw"/>
-  <CallbackSeq:ObserveEvent xmi:id="_UtTF4FaXEd67T6XSEZbabw" base_Message="_nHmUcFaLEd67T6XSEZbabw"/>
+  <Callback:CallerInstance xmi:id="_7gS9MKKNEd6U04mZnfx5RA" base_Lifeline="_ayyAwKIiEd6U04mZnfx5RA"/>
+  <Callback:CalleeInstance xmi:id="_9YEXIKKNEd6U04mZnfx5RA" base_Lifeline="_brslwKIiEd6U04mZnfx5RA"/>
+  <Callback:SubscriptionMessage xmi:id="_-yoQoKKNEd6U04mZnfx5RA" base_Message="_dQicoKIiEd6U04mZnfx5RA"/>
+  <Callback:EventMessage xmi:id="_AQ8BsKKOEd6U04mZnfx5RA" base_Message="_gkJicKIiEd6U04mZnfx5RA"/>
 </xmi:XMI>
