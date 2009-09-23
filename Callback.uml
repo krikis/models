@@ -25,8 +25,8 @@
     <packagedElement xmi:type="uml:Component" xmi:id="_GsPR0FaKEd67T6XSEZbabw" name="Callee">
       <ownedAttribute xmi:type="uml:Port" xmi:id="_zB4xoFaKEd67T6XSEZbabw" type="_J5DMEFaKEd67T6XSEZbabw" aggregation="composite"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_JANfkFaKEd67T6XSEZbabw" name="Subscription"/>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_ISgFAFaKEd67T6XSEZbabw" name="Event"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_JANfkFaKEd67T6XSEZbabw" name="ISubscription"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_ISgFAFaKEd67T6XSEZbabw" name="IEvent"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_JlldgFaKEd67T6XSEZbabw" name="CallerPort" clientDependency="_W-EhkFaKEd67T6XSEZbabw _L4sIkFaKEd67T6XSEZbabw">
       <interfaceRealization xmi:id="_W-EhkFaKEd67T6XSEZbabw" supplier="_ISgFAFaKEd67T6XSEZbabw" client="_JlldgFaKEd67T6XSEZbabw" contract="_ISgFAFaKEd67T6XSEZbabw"/>
     </packagedElement>

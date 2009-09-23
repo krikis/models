@@ -2,8 +2,8 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Callback="http:///schemas/Callback/_RPnBYKIiEd6U04mZnfx5RA/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Callback/_RPnBYKIiEd6U04mZnfx5RA/0 CallbackSeqProfile.uml#_RPoPgaIiEd6U04mZnfx5RA">
   <uml:Package xmi:id="_ZsKW8KIiEd6U04mZnfx5RA">
     <packagedElement xmi:type="uml:Interaction" xmi:id="_ahn_UKIiEd6U04mZnfx5RA" name="Interaction">
-      <lifeline xmi:id="_ayyAwKIiEd6U04mZnfx5RA" name="Caller" coveredBy="_dQh1kaIiEd6U04mZnfx5RA _dQhOgKIiEd6U04mZnfx5RA _dQh1lKIiEd6U04mZnfx5RA _gkI7Y6IiEd6U04mZnfx5RA _gkI7YaIiEd6U04mZnfx5RA _gkI7ZKIiEd6U04mZnfx5RA"/>
-      <lifeline xmi:id="_brslwKIiEd6U04mZnfx5RA" name="Callee" coveredBy="_dQh1kqIiEd6U04mZnfx5RA _dQh1kKIiEd6U04mZnfx5RA _dQh1k6IiEd6U04mZnfx5RA _gkI7YqIiEd6U04mZnfx5RA _gkI7YKIiEd6U04mZnfx5RA _gkI7ZaIiEd6U04mZnfx5RA"/>
+      <lifeline xmi:id="_ayyAwKIiEd6U04mZnfx5RA" name="ACaller" coveredBy="_dQh1kaIiEd6U04mZnfx5RA _dQhOgKIiEd6U04mZnfx5RA _dQh1lKIiEd6U04mZnfx5RA _gkI7Y6IiEd6U04mZnfx5RA _gkI7YaIiEd6U04mZnfx5RA _gkI7ZKIiEd6U04mZnfx5RA"/>
+      <lifeline xmi:id="_brslwKIiEd6U04mZnfx5RA" name="ACallee" coveredBy="_dQh1kqIiEd6U04mZnfx5RA _dQh1kKIiEd6U04mZnfx5RA _dQh1k6IiEd6U04mZnfx5RA _gkI7YqIiEd6U04mZnfx5RA _gkI7YKIiEd6U04mZnfx5RA _gkI7ZaIiEd6U04mZnfx5RA"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQhOgKIiEd6U04mZnfx5RA" name="invocation-1-start" covered="_ayyAwKIiEd6U04mZnfx5RA" message="_dQicoKIiEd6U04mZnfx5RA"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_dQh1kKIiEd6U04mZnfx5RA" name="execution-1-start" covered="_brslwKIiEd6U04mZnfx5RA" message="_dQicoKIiEd6U04mZnfx5RA"/>
       <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_dQh1kaIiEd6U04mZnfx5RA" name="invocation-1-body" covered="_ayyAwKIiEd6U04mZnfx5RA" start="_dQhOgKIiEd6U04mZnfx5RA" finish="_dQh1lKIiEd6U04mZnfx5RA"/>
