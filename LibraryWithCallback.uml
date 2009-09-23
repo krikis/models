@@ -64,7 +64,6 @@
   <MVC:View xmi:id="_Nn-NwJL3Ed60q4NiehNL0Q" base_Component="_1f5HIIwqEd6vdKRnqZE9WA"/>
   <MVC:Controller xmi:id="_OrzCQJL3Ed60q4NiehNL0Q" base_Component="_1u4lYIwqEd6vdKRnqZE9WA"/>
   <MVC:DataInterface xmi:id="_RoVr4JL3Ed60q4NiehNL0Q" base_Interface="_DM_JQIwrEd6vdKRnqZE9WA"/>
-  <MVC:UpdateInterface xmi:id="_S5kqQJL3Ed60q4NiehNL0Q" base_Interface="_DupE0IwrEd6vdKRnqZE9WA"/>
   <MVC:CommandInterface xmi:id="_T5XTUJL3Ed60q4NiehNL0Q" base_Interface="_D9cV0IwrEd6vdKRnqZE9WA"/>
   <Callback:EventInterface xmi:id="_K73boKgmEd6NetkIU4cIwg"/>
   <Callback:EventInterface xmi:id="_mYdToKgmEd6NetkIU4cIwg" base_Interface="_DupE0IwrEd6vdKRnqZE9WA"/>
