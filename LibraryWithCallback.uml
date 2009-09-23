@@ -26,6 +26,7 @@
       <ownedAttribute xmi:type="uml:Port" xmi:id="_OkuLoIwtEd6vdKRnqZE9WA" type="_CYA-MIwtEd6vdKRnqZE9WA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_DM_JQIwrEd6vdKRnqZE9WA" name="IRegistry"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_otG20KgmEd6NetkIU4cIwg" name="IRegistryEvent"/>
     <packagedElement xmi:type="uml:Interface" xmi:id="_DupE0IwrEd6vdKRnqZE9WA" name="IWindow"/>
     <packagedElement xmi:type="uml:Interface" xmi:id="_D9cV0IwrEd6vdKRnqZE9WA" name="IServices"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_7YI3cIwrEd6vdKRnqZE9WA" name="ModelData" clientDependency="_A21UwIwsEd6vdKRnqZE9WA">
@@ -33,10 +34,13 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_UmA1IIwsEd6vdKRnqZE9WA" name="ControlData" clientDependency="_YNmm4IwsEd6vdKRnqZE9WA"/>
     <packagedElement xmi:type="uml:Usage" xmi:id="_YNmm4IwsEd6vdKRnqZE9WA" name="" supplier="_DM_JQIwrEd6vdKRnqZE9WA" client="_UmA1IIwsEd6vdKRnqZE9WA"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="__kMywIwsEd6vdKRnqZE9WA" name="ViewUpdate" clientDependency="_DG2aIIwtEd6vdKRnqZE9WA">
+    <packagedElement xmi:type="uml:Class" xmi:id="__kMywIwsEd6vdKRnqZE9WA" name="ViewUpdate" clientDependency="_DG2aIIwtEd6vdKRnqZE9WA _E5GygKgnEd6NetkIU4cIwg">
       <interfaceRealization xmi:id="_DG2aIIwtEd6vdKRnqZE9WA" supplier="_DupE0IwrEd6vdKRnqZE9WA" client="__kMywIwsEd6vdKRnqZE9WA" contract="_DupE0IwrEd6vdKRnqZE9WA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="__9XgsIwsEd6vdKRnqZE9WA" name="ModelUpdate" clientDependency="_BguJ0IwtEd6vdKRnqZE9WA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_E5GygKgnEd6NetkIU4cIwg" supplier="_otG20KgmEd6NetkIU4cIwg" client="__kMywIwsEd6vdKRnqZE9WA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="__9XgsIwsEd6vdKRnqZE9WA" name="ModelUpdate" clientDependency="_BguJ0IwtEd6vdKRnqZE9WA __W8xgKgmEd6NetkIU4cIwg">
+      <interfaceRealization xmi:id="__W8xgKgmEd6NetkIU4cIwg" supplier="_otG20KgmEd6NetkIU4cIwg" client="__9XgsIwsEd6vdKRnqZE9WA" contract="_otG20KgmEd6NetkIU4cIwg"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Usage" xmi:id="_BguJ0IwtEd6vdKRnqZE9WA" supplier="_DupE0IwrEd6vdKRnqZE9WA" client="__9XgsIwsEd6vdKRnqZE9WA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_CYA-MIwtEd6vdKRnqZE9WA" name="ControlCommand" clientDependency="_D_iVoIwtEd6vdKRnqZE9WA">
       <interfaceRealization xmi:id="_D_iVoIwtEd6vdKRnqZE9WA" supplier="_D9cV0IwrEd6vdKRnqZE9WA" client="_CYA-MIwtEd6vdKRnqZE9WA" contract="_D9cV0IwrEd6vdKRnqZE9WA"/>
@@ -62,5 +66,7 @@
   <MVC:DataInterface xmi:id="_RoVr4JL3Ed60q4NiehNL0Q" base_Interface="_DM_JQIwrEd6vdKRnqZE9WA"/>
   <MVC:UpdateInterface xmi:id="_S5kqQJL3Ed60q4NiehNL0Q" base_Interface="_DupE0IwrEd6vdKRnqZE9WA"/>
   <MVC:CommandInterface xmi:id="_T5XTUJL3Ed60q4NiehNL0Q" base_Interface="_D9cV0IwrEd6vdKRnqZE9WA"/>
-  <Callback:EventInterface xmi:id="_K73boKgmEd6NetkIU4cIwg" base_Interface="_DM_JQIwrEd6vdKRnqZE9WA"/>
+  <Callback:EventInterface xmi:id="_K73boKgmEd6NetkIU4cIwg"/>
+  <Callback:EventInterface xmi:id="_mYdToKgmEd6NetkIU4cIwg" base_Interface="_DupE0IwrEd6vdKRnqZE9WA"/>
+  <Callback:SubscriptionInterface xmi:id="_zAjckKgmEd6NetkIU4cIwg" base_Interface="_otG20KgmEd6NetkIU4cIwg"/>
 </xmi:XMI>
