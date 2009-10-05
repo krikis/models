@@ -70,4 +70,5 @@
   <Callback:SubscriptionInterface xmi:id="_zAjckKgmEd6NetkIU4cIwg" base_Interface="_otG20KgmEd6NetkIU4cIwg"/>
   <Callback:Callee xmi:id="_bYx10KgtEd6it_TC9vReoQ" base_Component="_1R8KsIwqEd6vdKRnqZE9WA"/>
   <Callback:Caller xmi:id="_cj5lIKgtEd6it_TC9vReoQ" base_Component="_1f5HIIwqEd6vdKRnqZE9WA"/>
+  <MVC:UpdateInterface xmi:id="_u1KIcKhNEd6FHZ5ybbZq0w" base_Interface="_DupE0IwrEd6vdKRnqZE9WA"/>
 </xmi:XMI>
