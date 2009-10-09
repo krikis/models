@@ -35,14 +35,14 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_Uqres5L7Ed60q4NiehNL0Q" type="5005"/>
       <children xmi:type="notation:Shape" xmi:id="_WfBxMpL7Ed60q4NiehNL0Q" type="3004" fontName="Lucida Grande">
         <element xmi:type="uml:BehaviorExecutionSpecification" href="User.uml#_We2LA5L7Ed60q4NiehNL0Q"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WfBxM5L7Ed60q4NiehNL0Q" x="24" y="105" width="20" height="24"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WfBxM5L7Ed60q4NiehNL0Q" x="26" y="105" width="20" height="24"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_Y7vrQJL7Ed60q4NiehNL0Q" type="3004" fontName="Lucida Grande">
         <element xmi:type="uml:BehaviorExecutionSpecification" href="User.uml#_Y7mhUpL7Ed60q4NiehNL0Q"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y7vrQZL7Ed60q4NiehNL0Q" x="24" y="168" width="20" height="24"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y7vrQZL7Ed60q4NiehNL0Q" x="26" y="168" width="20" height="24"/>
       </children>
       <element xmi:type="uml:Lifeline" href="User.uml#_Uqji4JL7Ed60q4NiehNL0Q"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UqresZL7Ed60q4NiehNL0Q" x="580" y="28" width="68" height="306"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UqresZL7Ed60q4NiehNL0Q" x="580" y="28" width="72" height="306"/>
     </children>
     <styles xmi:type="uml2t.seqd.notation:SDModelStorageStyle" xmi:id="_RDsJ4ZL7Ed60q4NiehNL0Q"/>
     <element xmi:type="uml:Interaction" href="User.uml#_RDiY4JL7Ed60q4NiehNL0Q"/>
@@ -61,7 +61,7 @@
       <intListValue>151</intListValue>
     </styles>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_WfJF85L7Ed60q4NiehNL0Q" name="TargetAnchor">
-      <intListValue>658</intListValue>
+      <intListValue>660</intListValue>
       <intListValue>151</intListValue>
     </styles>
     <element xmi:type="uml:Message" href="User.uml#_We2LBpL7Ed60q4NiehNL0Q"/>
@@ -76,7 +76,7 @@
     <styles xmi:type="notation:RoutingStyle" xmi:id="_Y71x4ZL7Ed60q4NiehNL0Q"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_Y71x4pL7Ed60q4NiehNL0Q" fontName="Lucida Grande"/>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_Y741MZL7Ed60q4NiehNL0Q" name="SourceAnchor">
-      <intListValue>658</intListValue>
+      <intListValue>660</intListValue>
       <intListValue>214</intListValue>
     </styles>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_Y741M5L7Ed60q4NiehNL0Q" name="TargetAnchor">

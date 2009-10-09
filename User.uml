@@ -4,7 +4,7 @@
     <packagedElement xmi:type="uml:Interaction" xmi:id="_RDiY4JL7Ed60q4NiehNL0Q" name="Interaction">
       <lifeline xmi:id="_R4j8YJL7Ed60q4NiehNL0Q" name="User" coveredBy="_Y7mhU5L7Ed60q4NiehNL0Q _Y7mhUZL7Ed60q4NiehNL0Q _Y7mhVJL7Ed60q4NiehNL0Q _ci6mQZL7Ed60q4NiehNL0Q _ci4KAJL7Ed60q4NiehNL0Q _ci7NUpL7Ed60q4NiehNL0Q"/>
       <lifeline xmi:id="_UCbL4JL7Ed60q4NiehNL0Q" name="UserList" coveredBy="_We2LApL7Ed60q4NiehNL0Q _We2LAJL7Ed60q4NiehNL0Q _We2LBZL7Ed60q4NiehNL0Q _ci7NUJL7Ed60q4NiehNL0Q _ci6mQJL7Ed60q4NiehNL0Q _ci7NUZL7Ed60q4NiehNL0Q"/>
-      <lifeline xmi:id="_Uqji4JL7Ed60q4NiehNL0Q" name="UserContoller" coveredBy="_We2LA5L7Ed60q4NiehNL0Q _We2LAZL7Ed60q4NiehNL0Q _We2LBJL7Ed60q4NiehNL0Q _Y7mhUpL7Ed60q4NiehNL0Q _Y7mhUJL7Ed60q4NiehNL0Q _Y7nIYJL7Ed60q4NiehNL0Q"/>
+      <lifeline xmi:id="_Uqji4JL7Ed60q4NiehNL0Q" name="UserController" coveredBy="_We2LA5L7Ed60q4NiehNL0Q _We2LAZL7Ed60q4NiehNL0Q _We2LBJL7Ed60q4NiehNL0Q _Y7mhUpL7Ed60q4NiehNL0Q _Y7mhUJL7Ed60q4NiehNL0Q _Y7nIYJL7Ed60q4NiehNL0Q"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_We2LAJL7Ed60q4NiehNL0Q" name="invocation-1-start" covered="_UCbL4JL7Ed60q4NiehNL0Q" message="_We2LBpL7Ed60q4NiehNL0Q"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_We2LAZL7Ed60q4NiehNL0Q" name="execution-1-start" covered="_Uqji4JL7Ed60q4NiehNL0Q" message="_We2LBpL7Ed60q4NiehNL0Q"/>
       <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_We2LApL7Ed60q4NiehNL0Q" name="invocation-1-body" covered="_UCbL4JL7Ed60q4NiehNL0Q" start="_We2LAJL7Ed60q4NiehNL0Q" finish="_We2LBZL7Ed60q4NiehNL0Q"/>
