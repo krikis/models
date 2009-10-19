@@ -7,32 +7,32 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_azKbQaIiEd6U04mZnfx5RA" type="5005"/>
       <children xmi:type="notation:Shape" xmi:id="_dQ0wgKIiEd6U04mZnfx5RA" type="3004" fontName="Lucida Grande">
         <element xmi:type="uml:BehaviorExecutionSpecification" href="CallbackSeq.uml#_dQh1kaIiEd6U04mZnfx5RA"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dQ0wgaIiEd6U04mZnfx5RA" x="20" y="140" width="20" height="24"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dQ0wgaIiEd6U04mZnfx5RA" x="20" y="123" width="20" height="24"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_gkWWwKIiEd6U04mZnfx5RA" type="3004" fontName="Lucida Grande">
         <element xmi:type="uml:BehaviorExecutionSpecification" href="CallbackSeq.uml#_gkI7Y6IiEd6U04mZnfx5RA"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gkWWwaIiEd6U04mZnfx5RA" x="20" y="195" width="20" height="24"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gkWWwaIiEd6U04mZnfx5RA" x="20" y="178" width="20" height="24"/>
       </children>
       <element xmi:type="uml:Lifeline" href="CallbackSeq.uml#_ayyAwKIiEd6U04mZnfx5RA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_azJ0MaIiEd6U04mZnfx5RA" x="139" y="28" width="60" height="306"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_azJ0MaIiEd6U04mZnfx5RA" x="139" y="28" width="60" height="303"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_br9EcKIiEd6U04mZnfx5RA" type="3001" fontName="Lucida Grande">
       <children xmi:type="notation:DecorationNode" xmi:id="_br9EcqIiEd6U04mZnfx5RA" type="5001"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_br9Ec6IiEd6U04mZnfx5RA" type="5005"/>
       <children xmi:type="notation:Shape" xmi:id="_dQ1XkKIiEd6U04mZnfx5RA" type="3004" fontName="Lucida Grande">
         <element xmi:type="uml:BehaviorExecutionSpecification" href="CallbackSeq.uml#_dQh1kqIiEd6U04mZnfx5RA"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dQ1XkaIiEd6U04mZnfx5RA" x="20" y="140" width="20" height="24"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dQ1XkaIiEd6U04mZnfx5RA" x="20" y="123" width="20" height="24"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_gkVvsKIiEd6U04mZnfx5RA" type="3004" fontName="Lucida Grande">
         <element xmi:type="uml:BehaviorExecutionSpecification" href="CallbackSeq.uml#_gkI7YqIiEd6U04mZnfx5RA"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gkVvsaIiEd6U04mZnfx5RA" x="20" y="195" width="20" height="24"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gkVvsaIiEd6U04mZnfx5RA" x="20" y="178" width="20" height="24"/>
       </children>
       <element xmi:type="uml:Lifeline" href="CallbackSeq.uml#_brslwKIiEd6U04mZnfx5RA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_br9EcaIiEd6U04mZnfx5RA" x="369" y="28" width="60" height="306"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_br9EcaIiEd6U04mZnfx5RA" x="409" y="28" width="60" height="303"/>
     </children>
     <styles xmi:type="uml2t.seqd.notation:SDModelStorageStyle" xmi:id="_akAk8aIiEd6U04mZnfx5RA"/>
     <element xmi:type="uml:Interaction" href="CallbackSeq.uml#_ahn_UKIiEd6U04mZnfx5RA"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_akAk8qIiEd6U04mZnfx5RA" x="36" y="27" width="479" height="397"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_akAk8qIiEd6U04mZnfx5RA" x="81" y="72" width="577" height="397"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_ZsNaQaIiEd6U04mZnfx5RA"/>
   <element xmi:type="uml:Package" href="CallbackSeq.uml#_ZsKW8KIiEd6U04mZnfx5RA"/>
@@ -43,12 +43,12 @@
     <styles xmi:type="notation:RoutingStyle" xmi:id="_dQ6QEaIiEd6U04mZnfx5RA"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_dQ6QEqIiEd6U04mZnfx5RA" fontName="Lucida Grande"/>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_dQ_IkaIiEd6U04mZnfx5RA" name="SourceAnchor">
-      <intListValue>215</intListValue>
-      <intListValue>195</intListValue>
+      <intListValue>260</intListValue>
+      <intListValue>223</intListValue>
     </styles>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_dQ_voKIiEd6U04mZnfx5RA" name="TargetAnchor">
-      <intListValue>425</intListValue>
-      <intListValue>195</intListValue>
+      <intListValue>510</intListValue>
+      <intListValue>223</intListValue>
     </styles>
     <element xmi:type="uml:Message" href="CallbackSeq.uml#_dQicoKIiEd6U04mZnfx5RA"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dQ6QE6IiEd6U04mZnfx5RA" points="[30, -2, -405, -2]$[435, -150, 0, -150]"/>
@@ -62,12 +62,12 @@
     <styles xmi:type="notation:RoutingStyle" xmi:id="_gkb2UaIiEd6U04mZnfx5RA"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_gkb2UqIiEd6U04mZnfx5RA" fontName="Lucida Grande"/>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_gkgu0aIiEd6U04mZnfx5RA" name="SourceAnchor">
-      <intListValue>425</intListValue>
-      <intListValue>250</intListValue>
+      <intListValue>510</intListValue>
+      <intListValue>278</intListValue>
     </styles>
     <styles xmi:type="notation:IntListValueStyle" xmi:id="_gkgu06IiEd6U04mZnfx5RA" name="TargetAnchor">
-      <intListValue>215</intListValue>
-      <intListValue>250</intListValue>
+      <intListValue>260</intListValue>
+      <intListValue>278</intListValue>
     </styles>
     <element xmi:type="uml:Message" href="CallbackSeq.uml#_gkJicKIiEd6U04mZnfx5RA"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gkb2U6IiEd6U04mZnfx5RA" points="[-30, 4, 405, 4]$[-443, 150, -8, 150]"/>
